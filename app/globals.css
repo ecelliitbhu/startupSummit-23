@@ -2,26 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Add this CSS in your stylesheets or style tags */
+
+/* Style for the footer container */
+.flowbite-footer {
+  background-color: #1e293b;
+  padding: 40px 0;
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Style for the social media handles */
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.social-links li {
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.social-links a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Style for the contact information */
+.contact-info {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+/* Style for the divider */
+.divider {
+  border-bottom: 1px solid #ffffff;
+  margin: 20px 0;
+}
+
+/* Style for the copyright text */
+.text-center {
+  text-align: center;
+}
+.column{
+  margin-top:10px;
 }
