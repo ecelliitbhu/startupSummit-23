@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
@@ -12,16 +13,16 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import Image from "next/image"
+import Image from "next/image";
 import { useRouter } from "next/navigation";
-import ecellicon from "../../utils/ecellicon.jpg"
+import ecellicon from "../../utils/ecellicon.jpg";
 const routes = ["Home", "Speakers", "Partners", "Events", "Agenda"];
 const userProfile = ["Profile", "Account", "Logout"];
 
 export default function NavbarComponent() {
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [userLoggedIn, setUserLoggedIn] = useState(false);
-  const [burger,setBurger] = useState(false)
+  const [burger, setBurger] = useState(false);
   const router = useRouter();
 
   const handleOpenUserMenu = (event) => {
@@ -43,18 +44,16 @@ export default function NavbarComponent() {
       return setUserLoggedIn(true);
     }
   };
+  
 
   return (
-    <AppBar
-      position="sticky"
-      className=" flex flex-row bg-black"
-    >
-      <Container maxWidth="xl" className="bg-black">
+    <AppBar position="sticky" className="flex flex-row" style={{backgroundColor:"black"} }>
+      <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <Tooltip title="Open Routes">
               <IconButton onClick={handleBurger} sx={{ p: 0 }}>
-                <MenuIcon htmlColor="grey"/>
+                <MenuIcon htmlColor="grey" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -74,18 +73,18 @@ export default function NavbarComponent() {
               onClose={handleBurger}
             >
               {routes.map((setting) => (
-                <MenuItem key={setting} onClick={()=>{router.push(`/${setting}`)}}>
+                <MenuItem
+                  key={setting}
+                  onClick={() => {
+                    router.push(`/${setting}`);
+                  }}
+                >
                   <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <Image
-            src={ecellicon}
-            width={75}
-            height={75}
-            alt="ecell"
-          />
+          <Image src={ecellicon} width={75} height={75} alt="ecell" />
           <Typography
             variant="h6"
             noWrap

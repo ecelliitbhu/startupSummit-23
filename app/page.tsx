@@ -5,7 +5,7 @@ import NavbarComponent from "../components/navbar/navbar";
 
 export default function Home() {
   return (
-    <main>
+    <main >
       
         <NavbarComponent />
       
