@@ -1,9 +1,9 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
@@ -16,16 +16,33 @@ import MenuItem from "@mui/material/MenuItem";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import ecellicon from "../../utils/ecellicon.jpg";
+import {
+  getAuth,
+  signInWithPopup,
+  signOut,
+  Auth,
+  GoogleAuthProvider,
+} from "firebase/auth";
+import { app } from "../firebase/firebase";
+import {
+  getFirestore,
+  collection,
+  addDoc,
+  where,
+  query,
+  getDocs,
+} from "firebase/firestore";
 const routes = ["Home", "Speakers", "Partners", "Events", "Agenda"];
 const userProfile = ["Profile", "Account", "Logout"];
 
 export default function NavbarComponent() {
   const [anchorElUser, setAnchorElUser] = useState(null);
   const [userLoggedIn, setUserLoggedIn] = useState(false);
-  const [burger, setBurger] = useState(false);
+  const [burger, setBurger] = useState<any>(false);
+  const auth: Auth = getAuth(app);
   const router = useRouter();
 
-  const handleOpenUserMenu = (event) => {
+  const handleOpenUserMenu = (event: any) => {
     setAnchorElUser(event.currentTarget);
   };
 
@@ -36,18 +53,53 @@ export default function NavbarComponent() {
   const handleBurger = () => {
     setBurger(!burger);
   };
-
-  // check user logged in
-  const checkLoggedIn = async () => {
-    const response = await axios.get("");
-    if (response) {
-      return setUserLoggedIn(true);
+  const database = getFirestore(app);
+  const handleLoginWithGoogle = async () => {
+    try {
+      const provider = new GoogleAuthProvider();
+      const response = await signInWithPopup(auth, provider);
+      console.log(auth.currentUser?.email);
+      const queryData: any = query(
+        collection(database, "users"),
+        where("name", "==", auth.currentUser?.email)
+      );
+      getDocs(queryData)
+        .then((data: any) => {
+          if (data.empty) {
+            addDoc(collection(database, "users"), {"email":auth.currentUser?.email})
+              .then((docRef) => {
+                console.log(`Document added with id : ${docRef}`);
+              })
+              .catch((err) => {
+                console.log(err);
+              });
+          } else {
+            console.log("User already exists");
+          }
+        })
+        .catch((err: any) => {
+          console.log(err);
+        });
+      router.push("/");
+      setUserLoggedIn(true);
+      // console.log(response.user.email);
+    } catch (err) {
+      console.log(err);
     }
   };
-  
+
+  const handleSignOut = async () => {
+    await signOut(auth);
+    setUserLoggedIn(false);
+    router.replace("/");
+  };
 
   return (
-    <AppBar position="sticky" className="flex flex-row" style={{backgroundColor:"black"} }>
+    <AppBar
+      position="sticky"
+      className="flex flex-row"
+      style={{ backgroundColor: "black" }}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -117,7 +169,9 @@ export default function NavbarComponent() {
           </Box>
 
           {!userLoggedIn ? (
-            <Button variant="contained">Sign in</Button>
+            <Button variant="contained" onClick={handleLoginWithGoogle}>
+              Sign in
+            </Button>
           ) : (
             <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open Profile">
@@ -146,7 +200,13 @@ export default function NavbarComponent() {
               >
                 {userProfile.map((setting) => (
                   <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                    <Typography textAlign="center">{setting}</Typography>
+                    {setting === "Logout" ? (
+                      <Typography textAlign="center" onClick={handleSignOut}>
+                        {setting}
+                      </Typography>
+                    ) : (
+                      <Typography textAlign="center">{setting}</Typography>
+                    )}
                   </MenuItem>
                 ))}
               </Menu>
