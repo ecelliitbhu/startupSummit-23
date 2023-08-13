@@ -1,18 +1,49 @@
+"use client";
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
 import logo from "@/public/logo/logo.png";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+  Cloud,
+  CreditCard,
+  Github,
+  Keyboard,
+  LifeBuoy,
+  LogOut,
+  Mail,
+  MessageSquare,
+  Plus,
+  PlusCircle,
+  Settings,
+  User,
+  UserPlus,
+  Users,
+} from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 interface OwnProps {}
 
 const nav = [
   {
     name: "Speakers",
-    link: "/#Speakers",
+    link: "/speakers",
   },
   {
     name: "Partners",
-    link: "",
+    link: "/partners",
   },
   {
     name: "Events",
@@ -22,6 +53,14 @@ const nav = [
     name: "Agenda",
     link: "/agenda",
   },
+  {
+    name: "Startup/Participants",
+    link: "",
+  },
+  {
+    name: "Investors",
+    link: "",
+  },
 ];
 
 type Props = OwnProps;
@@ -30,7 +69,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
   return (
     <header
       className={
-        "w-[100%] sticky z-10 top-8 max-w-[67.5rem] m-auto lg:p-0 px-4"
+        "w-[100%] sticky z-10 top-8 max-w-[76.5rem] m-auto lg:p-0 px-4"
       }
     >
       <nav className="w-full rounded-full z-10 bg-gray-300 opacity-95  md:absolute fixed">
@@ -109,9 +148,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     return (
                       <li key={index}>
                         <Link href={navigator.link}>
-                          <Button
-                            variant={"link"}
-                          >
+                          <Button variant={"link"}>
                             <span>{navigator.name}</span>
                           </Button>
                         </Link>
@@ -122,21 +159,23 @@ const Navbar: FunctionComponent<Props> = (props) => {
               </div>
 
               <div className="w-full lg:pl-2 space-y-2 border-primary lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
-                <Button
-                  type="button"
-                  title="Start buying"
-                  variant={"outline"}
-                  className={"rounded-full mr-3"}
-                >
-                  Sign up
-                </Button>
-                <Button
-                  type="button"
-                  title="Start buying"
-                  className={"rounded-full"}
-                >
-                  Register
-                </Button>
+                <DropdownMenu>
+                  <DropdownMenuTrigger>
+                    <Button
+                      type="button"
+                      title="Start buying"
+                      className={"rounded-full"}
+                    >
+                      Register
+                    </Button>{" "}
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuSeparator />
+                    <DropdownMenuItem>Investor</DropdownMenuItem>
+                    <DropdownMenuItem>Startup</DropdownMenuItem>
+                    <DropdownMenuItem>Attendee</DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
           </div>

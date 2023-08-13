@@ -17,7 +17,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
       <div className="container relative z-[1] m-auto px-6 md:px-12">
         <div className="m-auto text-center md:w-8/12 lg:w-6/12">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
-            A Joint{" "}<span className="text-primary">Initiative</span> by
+            A Joint <span className="text-primary">Initiative</span> by
           </h2>
         </div>
         <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">

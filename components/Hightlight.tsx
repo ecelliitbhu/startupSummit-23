@@ -48,11 +48,13 @@ const Hightlight: React.FC = () => {
               >
                 <CardHeader className="flex items-center justify-between text-center space-y-0 pb-2">
                   <CardTitle className="text-sm font-medium text-primary-foreground">
-                      {stat.title.toUpperCase()}
+                    {stat.title.toUpperCase()}
                   </CardTitle>
                 </CardHeader>
                 <CardContent className={"text-center"}>
-                  <div className="text-2xl font-bold text-primary-foreground">{stat.number}</div>
+                  <div className="text-2xl font-bold text-primary-foreground">
+                    {stat.number}
+                  </div>
                 </CardContent>
               </Card>
             );

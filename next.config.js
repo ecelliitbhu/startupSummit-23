@@ -14,8 +14,8 @@ const nextConfig = {
       "images.unsplash.com",
       "cdn.openart.ai",
       "firebasestorage.googleapis.com",
-        "cdn-icons-png.flaticon.com",
-        "flowbite.s3.amazonaws.com",
+      "cdn-icons-png.flaticon.com",
+      "flowbite.s3.amazonaws.com",
     ],
   },
 };

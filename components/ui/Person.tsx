@@ -9,7 +9,13 @@ interface PersonProps {
   quote?: string;
   position?: string;
 }
-const Person: React.FC<PersonProps> = ({ name, company, imageUrl, quote, position }) => {
+const Person: React.FC<PersonProps> = ({
+  name,
+  company,
+  imageUrl,
+  quote,
+  position,
+}) => {
   return (
     <div className="group relative rounded-3xl space-y-6 overflow-hidden flex-wrap image max-w-sm m-2">
       <Image
@@ -20,7 +26,10 @@ const Person: React.FC<PersonProps> = ({ name, company, imageUrl, quote, positio
         width="600"
         height="800"
       />
-      <div className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-primary translate-y-[100px] transition duration-300 ease-in-out group-hover:translate-y-0" style={{ height: "50%" }}>
+      <div
+        className="absolute bottom-0 inset-x-0 h-max mt-auto px-8 py-6 bg-primary translate-y-[100px] transition duration-300 ease-in-out group-hover:translate-y-0"
+        style={{ height: "50%" }}
+      >
         <div>
           <h4 className="text-xl font-semibold dark:text-gray-700 text-white mt-4">
             {name}

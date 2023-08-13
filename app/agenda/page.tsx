@@ -17,30 +17,29 @@ const notifications = [
     description: "",
   },
   {
-    title:
-      'Policy Keynote: \n',
-    description: "\"Role of Start-ups in India’s Digital Economy\" - Dr Chintan Vaishnav, Director- Atal Innovation Mission, NITI Aayog (Invited)",
+    title: "Policy Keynote: \n",
+    description:
+      '"Role of Start-ups in India’s Digital Economy" - Dr Chintan Vaishnav, Director- Atal Innovation Mission, NITI Aayog (Invited)',
   },
   {
-    title:
-      "Technology Keynote: ",
-    description: "Ms Irina Ghose, Managing Director - Microsoft India (Invited)\n",
+    title: "Technology Keynote: ",
+    description:
+      "Ms Irina Ghose, Managing Director - Microsoft India (Invited)\n",
   },
   {
-    title:
-      'Panel Discussion:'
-     ,
-    description: ' \"Strategic Building Blocks for Startups\" \n> Attracting and Engaging talent in startups\n> Financing\\n\> Technology support available\\n"'
+    title: "Panel Discussion:",
+    description:
+      ' "Strategic Building Blocks for Startups" \n> Attracting and Engaging talent in startups\n> Financing\\n> Technology support available\\n"',
   },
   {
-    title:
-      'Fireside Chat: ',
-    description: '\"Start-up Journey at Karnataka Digital Economy Mission (KDEM)\"\nMr Sanjeev Gupta, CEO, KDEM, with Dr Meeta Prakash, Principal Consultant at Infosys Technologies and Alumnus of IT (BHU) Varanasi\n',
+    title: "Fireside Chat: ",
+    description:
+      '"Start-up Journey at Karnataka Digital Economy Mission (KDEM)"\nMr Sanjeev Gupta, CEO, KDEM, with Dr Meeta Prakash, Principal Consultant at Infosys Technologies and Alumnus of IT (BHU) Varanasi\n',
   },
   {
-    title:
-      "Technology Keynote:",
-    description: " Ms Irina Ghose, Managing Director - Microsoft India (Invited)\n",
+    title: "Technology Keynote:",
+    description:
+      " Ms Irina Ghose, Managing Director - Microsoft India (Invited)\n",
   },
 ];
 
@@ -50,8 +49,7 @@ const day2 = [
     description: " 9:30 AM\n",
   },
   {
-    title:
-      'The PITCH PAVILION:',
+    title: "The PITCH PAVILION:",
     description: " Startup Presentations - 9:45 AM- 11:30 AM",
   },
   {
@@ -123,14 +121,14 @@ const page: FunctionComponent<Props> = (props) => {
             ))}
           </div>
         </CardContent>
-        <CardFooter className={'text-center'}>
-            <p className={'font-bold'}>Lunch Break: 1:00 PM- 2:00 PM
-                Networking and Exhibition Walkthrough: 2:00 PM - 3:30 PM
-                Closure: 3:30 PM
-            </p>
-        {/*  <Button className="w-full">*/}
-        {/*    <Check className="mr-2 h-4 w-4" /> Mark all as read*/}
-        {/*  </Button>*/}
+        <CardFooter className={"text-center"}>
+          <p className={"font-bold"}>
+            Lunch Break: 1:00 PM- 2:00 PM Networking and Exhibition Walkthrough:
+            2:00 PM - 3:30 PM Closure: 3:30 PM
+          </p>
+          {/*  <Button className="w-full">*/}
+          {/*    <Check className="mr-2 h-4 w-4" /> Mark all as read*/}
+          {/*  </Button>*/}
         </CardFooter>
       </Card>
     </div>
