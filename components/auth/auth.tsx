@@ -34,7 +34,7 @@ export default function AuthWrapper({
       collection(database, "users"),
       where("name", "==", currentUser?.email)
     );
-    
+      console.log(queryData)
       getDocs(queryData)
       .then((data: any) => {
         if (data.empty) {
