@@ -11,9 +11,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Digital Startup Summit Bangalore",
-  description: "The Digital Startup Summit 2023 is a groundbreaking two-day event that brings together aspiring entrepreneurs, seasoned professionals, industry experts, and investors from across the globe to the vibrant city of Bengaluru.",
-  keywords :[
-      "Digital",
+  description:
+    "The Digital Startup Summit 2023 is a groundbreaking two-day event that brings together aspiring entrepreneurs, seasoned professionals, industry experts, and investors from across the globe to the vibrant city of Bengaluru.",
+  keywords: [
+    "Digital",
     "Startup",
     "Summit",
     "Summit 2023",
@@ -72,7 +73,7 @@ export const metadata: Metadata = {
     "Tech innovation showcase",
     "IIT BHU startup resources",
     "Digital commerce startups",
-    "Startup collaboration strategies"
+    "Startup collaboration strategies",
   ],
 };
 

@@ -1,22 +1,11 @@
-import React, { FunctionComponent } from 'react';
-import Script from "next/Script"
-
-interface OwnProps {}
-
-type Props = OwnProps;
-
-const page: FunctionComponent<Props> = (props) => {
-
+import React from "react";
+import { EventEmbed } from "@/components/payment";
+const Page = () => {
   return (
-   <div className={'text-center'}>
-       <div className={'p-10 pt-5 flex justify-center items-center'}>
-       <iframe src="https://insider.in/digital-startup-summit-iit-bhu-oct28-2023/event" height={700} width={1000} className={'mt-40'}>
-
-       </iframe>
-
-       </div>
-   </div>
+    <div className={"pt-32  overflow-hidden  flex justify-center items-center"}>
+      <EventEmbed />
+    </div>
   );
 };
 
-export default page;
+export default Page;

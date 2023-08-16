@@ -16,45 +16,58 @@ import styles from "./styles.module.css";
 
 const Footer = () => {
   return (
-    <footer className="rounded-xl bg-gray-100 pt-8 mt-4">
-      <div className="container m-auto space-y-8 px-6 py-16 text-gray-600 md:px-12 lg:px-20">
-        <div className="flex flex-wrap justify-between items-center gap-4 border-b pb-8">
-          <div className="flex gap-6">
+    <footer className="rounded-xl bg-gray-200 pt-1 mt-4">
+      <div className="container m-auto space-y-8 px-6 py-5 text-gray-600 md:px-12 lg:px-20">
+        <div className="flex flex-wrap justify-between items-center gap-4 border-b pb-2">
+          <div className="flex items-center flex-wrap gap-6">
             <Image
               src={ecell_img}
               alt="ecell"
               loading="lazy"
-              className="w-14 sm:w-16 md:w-20 lg:w-24 xl:w-24 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              width={80}
+              height={60}
+              // className="w-12 h"
             />
             <Image
               src={aassi_img}
               alt="aassi"
               loading="lazy"
-              className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              width={80}
+              height={60}
+              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
             />
             <Image
               src={aiba_img}
               alt="aiba"
               loading="lazy"
-              className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              width={80}
+              height={60}
             />
             <Image
               src={pro_img}
               alt="prom"
               loading="lazy"
-              className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              width={80}
+              height={60}
             />
+
             <Image
               src={kdem_img}
               alt="kdem"
               loading="lazy"
-              className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              width={80}
+              height={60}
             />
             <Image
               src={saic_img}
               alt="saic"
               loading="lazy"
-              className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              width={80}
+              height={60}
             />
           </div>
 
@@ -133,7 +146,8 @@ const Footer = () => {
           </div>
           <div>
             <h6 className="text-lg font-medium text-cyan-900">Quick Links</h6>
-            <ul className="mt-4 list-inside space-y-4">
+            <ul className="mt-4 list-inside sm:space-y-4 flex gap-2 justify-center  space-between items-center sm:block">
+              <li></li>
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
                   Home

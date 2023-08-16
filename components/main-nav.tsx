@@ -82,8 +82,8 @@ const Navbar: FunctionComponent<Props> = (props) => {
               className="hidden peer"
             />
             <div className="w-full px-6 flex justify-between lg:w-max md:px-0">
-              <a
-                href="#"
+              <Link
+                href="/"
                 aria-label="logo"
                 className="flex space-x-2 items-center"
               >
@@ -101,7 +101,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   // className={'mix-blend-multiply'}
                   alt="startup summit logo"
                 />
-              </a>
+              </Link>
 
               <div className="flex items-center lg:hidden max-h-10">
                 <label
@@ -160,20 +160,29 @@ const Navbar: FunctionComponent<Props> = (props) => {
 
               <div className="w-full lg:pl-2 space-y-2 border-primary lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
                 <DropdownMenu>
-                  <DropdownMenuTrigger>
+                  <DropdownMenuTrigger className={"outline-none"}>
                     <Button
                       type="button"
-                      title="Start buying"
-                      className={"rounded-full"}
+                      className={"rounded-full focus-visible:outline-none"}
                     >
                       Register
-                    </Button>{" "}
+                    </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent>
                     <DropdownMenuSeparator />
-                    <DropdownMenuItem>Investor</DropdownMenuItem>
-                    <DropdownMenuItem>Startup</DropdownMenuItem>
-                    <Link href={"/attendee"} >
+                    <Link
+                      href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
+                      target={"_blank"}
+                    >
+                      <DropdownMenuItem>Investor</DropdownMenuItem>
+                    </Link>
+                    <Link
+                      href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
+                      target={"_blank"}
+                    >
+                      <DropdownMenuItem>Startup</DropdownMenuItem>
+                    </Link>
+                    <Link href={"/attendee"}>
                       <DropdownMenuItem>Attendee</DropdownMenuItem>
                     </Link>
                   </DropdownMenuContent>

@@ -3,3 +3,4 @@ node_modules
 package-lock.json
 webpack.config.ts
 next.config.js
+package-lock.yaml
