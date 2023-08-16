@@ -10,13 +10,14 @@ export default function Home() {
   return (
     <>
       <Hero />
+        <Hightlight />
       <Organizer />
+        {/*<Topics />*/}
+        <Trailblazzers />
       <About />
       <Content />
       {/*<Carousel/>*/}
-      <Hightlight />
-      {/*<Topics />*/}
-      <Trailblazzers />
+
     </>
   );
 }

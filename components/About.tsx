@@ -16,7 +16,7 @@ const About: React.FC = () => {
     <div>
       <div className="container mx-auto px-6 text-center md:px-12">
         <div className="mb-16">
-          <h2 className="mb-4 text-center text-2xl font-bold  md:text-4xl capitalize">
+          <h2 className="mt-14 mb-4 text-center text-2xl font-bold  md:text-4xl capitalize">
             Why should you attend
           </h2>
           {/*<p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-8/12">*/}

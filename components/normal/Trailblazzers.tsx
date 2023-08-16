@@ -8,7 +8,7 @@ export const Trailblazzers = () => {
       className="container md:scale-80 mx-auto px-6 md:px-10 image"
     >
       <div className="mb-16 md:w-2/3 lg:w-1/2 mx-auto">
-        <h2 className="mb-4 text-2xl font-bold md:text-4xl text-center">
+        <h2 className="mb-4 text-2xl font-bold md:text-4xl text-center pt-14">
           IIT BHU Trailblazers
         </h2>
       </div>

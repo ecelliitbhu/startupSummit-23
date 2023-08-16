@@ -147,9 +147,7 @@ const Footer = () => {
           <div>
             <h6 className="text-lg font-medium text-cyan-900">Quick Links</h6>
             <ul className="mt-4 list-inside sm:space-y-4 flex gap-2 justify-center  space-between items-center sm:block">
-
-              <li>
-              </li>
+              <li></li>
               <li>
                 <a href="#" className="transition hover:text-cyan-600">
                   Home

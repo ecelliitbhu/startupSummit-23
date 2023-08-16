@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/private/",
     },
-    sitemap: "https://startupsummit23.ecelliitbhu.com",
+    sitemap: "https://startupsummit23.ecelliitbhu.com/sitemap.xml",
   };
 }
