@@ -25,13 +25,13 @@ const Organizer: FunctionComponent<Props> = (props) => {
       }}
     >
       <div className="container relative z-[1] m-auto px-6 md:px-12">
-        <div className="m-auto text-center md:w-8/12 lg:w-6/12">
+        <div className="m-auto text-center md:w-12/12 lg:w-6/12">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
             A Joint <span className="text-primary-foreground">Initiative</span>{" "}
             by
           </h2>
         </div>
-        <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
+        <div className="m-auto mt-16 md:w-12/12 lg:w-12/12 xl:w-8/12">
           <div className="flex flex-wrap justify-center gap-6">
             <div className="group rounded-xl border border-gray-200 dark:border-gray-600 bg-white bg-opacity-5 p-2 hover:bg-opacity-10">
               <Image
@@ -97,6 +97,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
         </div>
       </div>
     </div>
+       
   );
 };
 
