@@ -10,6 +10,69 @@ import pro_img from "@/public/logo/pro_img.png";
 import saic_img from "@/public/logo/saic_img.png";
 import kdem_img from "@/public/logo/kdem_img.png";
 import styles from "./styles.module.css";
+const overcallCordinator = [
+  {
+    name: "Nikhil Gupta",
+    email: "guptanikhil123@gmail.com",
+    phone: "+919845556565",
+  },
+  {
+    name: "Dhiraj Daga",
+    email: "dheraj.daga.app12@iitbhu.ac.in",
+    phone: "+918090672982",
+  },
+];
+const iitBhuAlumni = [
+  {
+    name: "Kannan Iyer",
+    email: "ashwathelectric@gmail.com",
+    phone: "+919342860485",
+  },
+  {
+    name: "Shashikanth Pathak",
+    email: "shashi639@gmail.com",
+    phone: "+917028079213",
+  },
+  {
+    name: "Akasmat Pradhan",
+    email: "akasmat.pradhan.cer13@itbhu.ac.in",
+    phone: "+918564061724",
+  },
+];
+const sponsorshipOpportunities = [
+  {
+    name: "Sanjeev Nikore",
+    email: "sanjeevnikore@gmail.com",
+    phone: "+918910194593",
+  },
+  {
+    name: "Sunil Khanna",
+    email: "sunit.khanna@paniit.org",
+    phone: "+919967522993",
+  },
+  {
+    name: "Sai Kumar",
+    email: "sai@promfgmedia.com",
+    phone: "+919820121879",
+  },
+];
+const speakingOpporunities = [
+  {
+    name: "Dr. Meeta Prakash",
+    email: "meetaprakash91@gmail.com",
+    phone: "+919972399103",
+  },
+  {
+    name: "Nishant Shukla",
+    email: "nishant@mopid.me",
+    phone: "+919044344740",
+  },
+  {
+    name: "Alysa Lobo",
+    email: "alysa.promfgmedia.com",
+    phone: "+919591230004",
+  },
+];
 
 // --------------------------------------------------------Designed by Sumit--------------------------------------------------------
 // New Footer
@@ -102,78 +165,174 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {/* Company links */}
 
+          {/*<div>*/}
+          {/*  <h6 className="text-lg font-medium text-cyan-900">*/}
+          {/*    E-Cell IIT BHU*/}
+          {/*  </h6>*/}
+          {/*  <ul className="mt-4 list-inside space-y-4">*/}
+          {/*    <li className="pr-12">*/}
+          {/*      <span className="">*/}
+          {/*        E-Cell IIT BHU fosters innovation at IIT BHU Varanasi,*/}
+          {/*        nurturing startups and providing networking opportunities for*/}
+          {/*        aspiring entrepreneurs.*/}
+          {/*      </span>*/}
+          {/*    </li>*/}
+          {/*  </ul>*/}
+          {/*</div>*/}
           <div>
             <h6 className="text-lg font-medium text-cyan-900">
-              E-Cell IIT BHU
+              Overall Coordinator
             </h6>
-            <ul className="mt-4 list-inside space-y-4">
-              <li className="pr-12">
-                <span className="">
-                  E-Cell IIT BHU fosters innovation at IIT BHU Varanasi,
-                  nurturing startups and providing networking opportunities for
-                  aspiring entrepreneurs.
-                </span>
-              </li>
-            </ul>
+            <div className={"flex flex-col items-start mt-5 space-y-2"}>
+              <ul className="list-inside space-y-4">
+                {overcallCordinator.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="flex flex-col items-start mt-5 space-y-2"
+                    >
+                      <li className="pr-12">
+                        <h4 className="">{item.name}</h4>
+                        <a
+                          href={`mailto:${item.email}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.email}
+                        </a>
+                        <br />
+                        <a
+                          href={`tel:${item.phone}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.phone}
+                        </a>
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">Contact Us</h6>
-            <ul className="mt-4 list-inside space-y-4">
-              <li>
-                <span className="">Indian Institute of Technology</span>
-              </li>
-
-              <li>
-                <span className="">Banaras Hindu University</span>
-              </li>
-              <li>
-                <span className="">Varanasi-221005, India</span>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  ✉️ ecell@iitbhu.ac.in
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  📞 +91 9120787959
-                </a>
-              </li>
-            </ul>
+            <h6 className="text-lg font-medium text-cyan-900">
+              For IIT BHU Alumni
+            </h6>
+            <div className={"flex flex-col items-start mt-5 space-y-2"}>
+              <ul className="list-inside space-y-4">
+                {iitBhuAlumni.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="flex flex-col items-start mt-5 space-y-2"
+                    >
+                      <li className="pr-12">
+                        <h4 className="">{item.name}</h4>
+                        <a
+                          href={`mailto:${item.email}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.email}
+                        </a>
+                        <br />
+                        <a
+                          href={`tel:${item.phone}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.phone}
+                        </a>
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
           <div>
-            <h6 className="text-lg font-medium text-cyan-900">Quick Links</h6>
-            <ul className="mt-4 list-inside sm:space-y-4 flex gap-2 justify-center  space-between items-center sm:block">
-              <li></li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  Guide
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  Blogs
-                </a>
-              </li>
-              <li>
-                <a href="#" className="transition hover:text-cyan-600">
-                  Contact
-                </a>
-              </li>
-            </ul>
+            <h6 className="text-lg font-medium text-cyan-900">
+              For Sponsorship Opportunities
+            </h6>
+            <div className={"flex flex-col items-start mt-5 space-y-2"}>
+              <ul className="list-inside space-y-4">
+                {speakingOpporunities.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="flex flex-col items-start mt-5 space-y-2"
+                    >
+                      <li className="pr-12">
+                        <h4 className="">{item.name}</h4>
+                        <a
+                          href={`mailto:${item.email}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.email}
+                        </a>
+                        <br />
+                        <a
+                          href={`tel:${item.phone}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.phone}
+                        </a>
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+          <div>
+            <h6 className="text-lg font-medium text-cyan-900">
+              For Speaking Opportunities
+            </h6>
+            <div className={"flex flex-col items-start mt-5 space-y-2"}>
+              <ul className="list-inside space-y-4">
+                {speakingOpporunities.map((item, index) => {
+                  return (
+                    <div
+                      key={index}
+                      className="flex flex-col items-start mt-5 space-y-2"
+                    >
+                      <li className="pr-12">
+                        <h4 className="">{item.name}</h4>
+                        <a
+                          href={`mailto:${item.email}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.email}
+                        </a>
+                        <br />
+                        <a
+                          href={`tel:${item.phone}`}
+                          className={
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                          }
+                        >
+                          {item.phone}
+                        </a>
+                      </li>
+                    </div>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
         </div>
       </div>

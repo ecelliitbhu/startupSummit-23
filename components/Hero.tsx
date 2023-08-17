@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import meeting from "@/public/assets/meeting.jpg";
 //@ts-ignore
@@ -9,6 +10,21 @@ import Frame from "../public/video/Frame_3.png";
 
 import heroVideo from "../public/video/E-Cell.mp4";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
+  DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import Link from "next/link";
 const Home: React.FC = () => {
   return (
     <div>
