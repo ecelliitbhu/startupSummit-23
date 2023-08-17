@@ -20,10 +20,12 @@ import { Button } from "@/components/ui/button";
 // } from "@/components/ui/dropdown-menu";
 import Link from "next/link";
 import heroVideo from "@/public/vid/video.mp4";
+
+import Hightlight from "@/components/highlight";
 const Home: React.FC = () => {
   return (
-    <div>
-      <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7">
+    <div className="w-[100%] h-[100vh] overflow-x-hidden ">
+      <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7 ">
         <div className="py-40  pb-0 lg:pb-0 px-20 flex-col justify-center items-center   dark:lg:w-12/12 mx-auto">
           {/* video */}
 
@@ -36,6 +38,7 @@ const Home: React.FC = () => {
               muted
               style={{
                 position: "absolute",
+                  backgroundAttachment:"fixed",
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
@@ -50,11 +53,7 @@ const Home: React.FC = () => {
             {/*  alt="overlay"*/}
             {/*/>*/}
             <div></div>{" "}
-            <div className="flex justify-center mt-2 mb-2 ">
-              <Button type="button" title="Start buying" size="lg">
-                REGISTER
-              </Button>
-            </div>
+
             <div
               className="mt-auto flex items-center space-x-4"
               style={{ color: "white" }}
@@ -68,6 +67,12 @@ const Home: React.FC = () => {
                 <b className="ml-2 text-xl lg:text-2xl">BENGALURU</b>
               </div>
             </div>
+              <div className="flex justify-center mt-2 mb-2 ">
+                  <Button type="button" title="Start buying" size="lg">
+                      REGISTER
+                  </Button>
+              </div>
+
           </div>
 
           <div
@@ -88,6 +93,9 @@ const Home: React.FC = () => {
 
         <hr />
       </div>
+        <div className="absolute bottom-0">
+        <Hightlight />
+        </div>
     </div>
   );
 };

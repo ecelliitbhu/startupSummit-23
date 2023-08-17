@@ -2,15 +2,15 @@ import Hero from "@/components/Hero";
 import Content from "@/components/Content";
 import About from "@/components/About";
 import Carousel from "@/components/Carousel";
-import Hightlight from "@/components/Hightlight";
+import Hightlight from "@/components/highlight";
 import Topics from "@/components/Topics";
-import { Trailblazzers } from "@/components/normal/Trailblazzers";
+import  Trailblazzers  from "@/components/trailblazzers";
 import Organizer from "@/components/Organizer";
 export default function Home() {
   return (
     <>
       <Hero />
-      <Hightlight />
+      {/*<Hightlight />*/}
       <Organizer />
       {/*<Topics />*/}
       <Trailblazzers />
