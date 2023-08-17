@@ -1,25 +1,10 @@
 "use client";
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
-import logo from "@/public/logo/logo.png";
+import logo from "@/public/logo/mainLogo.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import {
-  Cloud,
-  CreditCard,
-  Github,
-  Keyboard,
-  LifeBuoy,
-  LogOut,
-  Mail,
-  MessageSquare,
-  Plus,
-  PlusCircle,
-  Settings,
-  User,
-  UserPlus,
-  Users,
-} from "lucide-react";
+
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -72,9 +57,9 @@ const Navbar: FunctionComponent<Props> = (props) => {
         "w-[100%] sticky z-10 top-8 max-w-[76.5rem] m-auto lg:p-0 px-4"
       }
     >
-      <nav className="w-full rounded-full z-10 bg-gray-300 opacity-95  md:absolute fixed">
+      <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed">
         <div className="m-auto px-2 md:px-12 lg:px-7">
-          <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-4 md:gap-0 relative">
+          <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-2 md:gap-0 relative">
             <input
               type="checkbox"
               name="toggle_nav"
@@ -138,9 +123,9 @@ const Navbar: FunctionComponent<Props> = (props) => {
               <div className="text-gray-400 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
                 <ul
                   className=" 
-                            tracking-wide 
-                            font-medium 
-                            text-sm flex-col flex 
+                            tracking-wide
+                            font-light
+                            text-sm flex-col flex
                             lg:flex-row
                             gap-6 lg:gap-0"
                 >
@@ -148,7 +133,12 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     return (
                       <li key={index}>
                         <Link href={navigator.link}>
-                          <Button variant={"link"}>
+                          <Button
+                            className={
+                              "text-white font-light"
+                            }
+                            variant={"link"}
+                          >
                             <span>{navigator.name}</span>
                           </Button>
                         </Link>
@@ -158,7 +148,6 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 </ul>
               </div>
 
-              <div className="w-full lg:pl-2 space-y-2 border-primary lg:w-auto lg:space-y-0 sm:w-max lg:border-l">
                 <DropdownMenu>
                   <DropdownMenuTrigger className={"outline-none"}>
                     <Button
@@ -187,7 +176,6 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     </Link>
                   </DropdownMenuContent>
                 </DropdownMenu>
-              </div>
             </div>
           </div>
         </div>
