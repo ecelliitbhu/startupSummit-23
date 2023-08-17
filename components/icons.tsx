@@ -8,6 +8,8 @@ import {
   Youtube,
   BrainCircuit,
   Leaf,
+  CalendarCheck,
+  MapPin,
   type LucideIcon,
 } from "lucide-react";
 
@@ -23,4 +25,6 @@ export const Icons = {
   twitter: TwitterIcon,
   linkedin: Linkedin,
   youtube: Youtube,
+  calendar: CalendarCheck,
+  location: MapPin,
 };
