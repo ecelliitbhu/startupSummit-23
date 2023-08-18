@@ -1,138 +1,109 @@
 import React from "react";
-import demo1 from "@/public/assets/demo1.svg";
-import women from "@/public/assets/woman.jpg";
-import women1 from "@/public/assets/woman1.jpg";
-import man from "@/public/assets/man.jpg";
-import chat from "@/public/assets/chat-min.jpg";
-import exhi from "@/public/assets/exhi-min.jpg";
-import expert from "@/public/assets/expert-min.jpg";
-import ipo from "@/public/assets/ipo-min.jpg";
-import net from "@/public/assets/net1-min.jpg";
-import panel from "@/public/assets/panel1-min.jpg";
 
+import panel from "@/public/assets/panel.png";
+import fireside from "@/public/assets/fireside.png";
+import keynote from "@/public/assets/keynote.png";
+import pitch from "@/public/assets/pitch.png";
+import startupstreet from "@/public/assets/startupstreet.png";
+import networking from "@/public/assets/networking.png";
 import Image from "next/image";
 const About: React.FC = () => {
   return (
     <div id={"events"}>
-      <div className="container mx-auto px-6 text-center md:px-12">
-        <div className="mb-16">
-          <h2 className="mt-14 mb-4 text-center text-2xl font-bold  md:text-4xl capitalize">
-            Events
-          </h2>
-          {/*<p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-8/12">*/}
-          {/*    Tailus prides itself not only on award-winning technology, but also on the talent of its*/}
-          {/*    people of some of the brightest minds and most experienced executives in business.*/}
-          {/*</p>*/}
-        </div>
-        <div className="grid gap-28 p-20 md:grid-cols-3 md:gap-12">
-          <div className=" m-4 group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
-            <div className="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
-              <Image
-                className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                src={ipo}
-                alt="woman"
-                loading="lazy"
-                width="640"
-                height="805"
-              />
-            </div>
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="text-lg">Pitch Pavilion</h4>
-              </div>
-            </div>
+      <section className="">
+        <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8">
+          <div className="mx-auto max-w-lg text-center">
+            <h2 className="text-3xl font-bold sm:text-4xl">Events</h2>
           </div>
 
-          <div className=" m-4 group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
-            <div className="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
-              <Image
-                className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                src={net}
-                alt="woman"
-                loading="lazy"
-                width="1000"
-                height="667"
-              />
-            </div>
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="text-lg">
-                  Networking and Knowledge Exchange Opportunities
-                </h4>
-              </div>
-            </div>
-          </div>
+          <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/10">
+              <Image src={pitch} width={100} height={100} alt="panel" />
 
-          <div className=" m-4 group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
-            <div className="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
-              <Image
-                className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                src={exhi}
-                alt="man"
-                loading="lazy"
-                width="1000"
-                height="667"
-              />
+              <h2 className="mt-4 text-xl font-bold text-white">
+                Pitch Pavilion
+              </h2>
+
+              <p className="mt-1 text-sm text-gray-300">
+                The Pitch Pavilion is a dynamic event where the top 20 startups
+                present their innovative ideas to a pool of investors, aiming to
+                secure funding and support for their ventures.
+              </p>
             </div>
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="text-lg">Startup Street</h4>
-              </div>
+
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/10">
+              <Image src={startupstreet} width={100} height={100} alt="panel" />
+
+              <h2 className="mt-4 text-xl font-bold text-white">
+                Startup Street
+              </h2>
+
+              <p className="mt-1 text-sm text-gray-300">
+                Startup Street is a vibrant showcase featuring 30 innovative
+                startups, offering a glimpse into their diverse range of
+                products and services.
+              </p>
             </div>
-          </div>
-          <div className=" m-4 group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
-            <div className="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
-              <Image
-                className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                src={expert}
-                alt="man"
-                loading="lazy"
-                width="1000"
-                height="667"
-              />
+
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/10">
+              <Image src={panel} width={100} height={100} alt="panel" />
+
+              <h2 className="mt-4 text-xl font-bold text-white">
+                Panel Discussions
+              </h2>
+
+              <p className="mt-1 text-sm text-gray-300">
+                The event features 4+ panel discussions, each hosting a diverse
+                group of experts who engage in illuminating conversations.
+              </p>
             </div>
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="text-lg">Keynote Talks</h4>
-              </div>
+
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/10">
+              <Image src={keynote} width={100} height={100} alt="panel" />
+
+              <h2 className="mt-4 text-xl font-bold text-white">
+                Keynote Talks
+              </h2>
+
+              <p className="mt-1 text-sm text-gray-300">
+                Keynote talks at the event present captivating insights from
+                industry luminaries, providing attendees with visionary
+                perspectives and inspiring ideas that shape the future of the
+                business landscape.
+              </p>
             </div>
-          </div>
-          <div className=" m-4 group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
-            <div className="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
-              <Image
-                className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                src={panel}
-                alt="man"
-                loading="lazy"
-                width="1000"
-                height="667"
-              />
+
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/10">
+              <Image src={networking} width={100} height={100} alt="panel" />
+
+              <h2 className="mt-4 text-xl font-bold text-white">
+                Networking and Knowledge Exchange Opportunities
+              </h2>
+
+              <p className="mt-1 text-sm text-gray-300">
+                Seize unparalleled networking opportunities at the event,
+                fostering connections that pave the way for collaborations and
+                growth.
+              </p>
             </div>
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="text-lg">Panel Discussions</h4>
-              </div>
-            </div>
-          </div>
-          <div className=" m-4 group space-y-8 border-t-4 border-gray-100 dark:border-gray-800">
-            <div className="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]">
-              <Image
-                className="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                src={chat}
-                alt="man"
-                loading="lazy"
-                width="1000"
-                height="667"
-              />
-            </div>
-            <div className="space-y-4 text-center">
-              <div>
-                <h4 className="text-lg">Fireside Chats</h4>
-              </div>
+
+            <div className="block rounded-xl border border-gray-800 p-8 shadow-xl transition hover:border-primary/10 hover:shadow-primary/10">
+              <Image src={fireside} width={100} height={100} alt="panel" />
+
+              <h2 className="mt-4 text-xl font-bold text-white">
+                Fireside Chats
+              </h2>
+
+              <p className="mt-1 text-sm text-gray-300">
+                Fireside chats offer intimate conversations with industry
+                leaders, delving into their experiences and strategies,
+                providing attendees with candid insights and actionable
+                takeaways in an informal setting.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

@@ -4,7 +4,7 @@ import About from "@/components/About";
 import Carousel from "@/components/car";
 import Hightlight from "@/components/highlight";
 import Topics from "@/components/Topics";
-import  Trailblazzers  from "@/components/trailblazzers";
+import Trailblazzers from "@/components/trailblazzers";
 import Organizer from "@/components/Organizer";
 export default function Home() {
   return (

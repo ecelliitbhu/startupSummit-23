@@ -83,55 +83,96 @@ const Footer = () => {
       <div className="container m-auto space-y-8 px-6 py-5 text-gray-600 md:px-12 lg:px-20">
         <div className="flex flex-wrap justify-between items-center gap-4 border-b pb-2">
           <div className="flex items-center flex-wrap gap-6">
-           <Link href={"https://www.ecelliitbhu.com/"} target={"_blank"} aria-label={"ecell"} > <Image
-              src={ecell_img}
-              alt="ecell"
-              loading="lazy"
-              width={80}
-              height={60}
-              // className="w-12 h"
-            /></Link>
-            <Link href={"https://alumni.iitbhu.ac.in/"} target={"_blank"} aria-label={"ecell"} ><Image
-              src={aassi_img}
-              alt="aassi"
-              loading="lazy"
-              width={80}
-              height={60}
-              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
-            /></Link>
-            <Link href={"https://www.ecelliitbhu.com/"} target={"_blank"} aria-label={"ecell"} > <Image
-              src={aiba_img}
-              alt="aiba"
-              loading="lazy"
-              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
-              width={80}
-              height={60}
-            /></Link>
-            <Link href={"https://www.promfgmedia.com/"} target={"_blank"} aria-label={"ecell"} > <Image
-              src={pro_img}
-              alt="prom"
-              loading="lazy"
-              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
-              width={80}
-              height={60}
-            /></Link>
+            <Link
+              href={"https://www.ecelliitbhu.com/"}
+              target={"_blank"}
+              aria-label={"ecell"}
+            >
+              {" "}
+              <Image
+                src={ecell_img}
+                alt="ecell"
+                loading="lazy"
+                width={80}
+                height={60}
+                // className="w-12 h"
+              />
+            </Link>
+            <Link
+              href={"https://alumni.iitbhu.ac.in/"}
+              target={"_blank"}
+              aria-label={"ecell"}
+            >
+              <Image
+                src={aassi_img}
+                alt="aassi"
+                loading="lazy"
+                width={80}
+                height={60}
+                // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+              />
+            </Link>
+            <Link
+              href={"https://www.ecelliitbhu.com/"}
+              target={"_blank"}
+              aria-label={"ecell"}
+            >
+              {" "}
+              <Image
+                src={aiba_img}
+                alt="aiba"
+                loading="lazy"
+                // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+                width={80}
+                height={60}
+              />
+            </Link>
+            <Link
+              href={"https://www.promfgmedia.com/"}
+              target={"_blank"}
+              aria-label={"ecell"}
+            >
+              {" "}
+              <Image
+                src={pro_img}
+                alt="prom"
+                loading="lazy"
+                // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+                width={80}
+                height={60}
+              />
+            </Link>
 
-            <Link href={"https://karnatakadigital.in/"} target={"_blank"} aria-label={"ecell"} > <Image
-              src={kdem_img}
-              alt="kdem"
-              loading="lazy"
-              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
-              width={80}
-              height={60}
-            /></Link>
-            <Link href={"https://saic.iitbhu.ac.in/"} target={"_blank"} aria-label={"ecell"} > <Image
-              src={saic_img}
-              alt="saic"
-              loading="lazy"
-              // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
-              width={80}
-              height={60}
-            /></Link>
+            <Link
+              href={"https://karnatakadigital.in/"}
+              target={"_blank"}
+              aria-label={"ecell"}
+            >
+              {" "}
+              <Image
+                src={kdem_img}
+                alt="kdem"
+                loading="lazy"
+                // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+                width={80}
+                height={60}
+              />
+            </Link>
+            <Link
+              href={"https://saic.iitbhu.ac.in/"}
+              target={"_blank"}
+              aria-label={"ecell"}
+            >
+              {" "}
+              <Image
+                src={saic_img}
+                alt="saic"
+                loading="lazy"
+                // className="w-12 sm:w-14 md:w-16 lg:w-20 xl:w-20 h-12 sm:h-14 md:h-16 lg:h-20 xl:h-20"
+                width={80}
+                height={60}
+              />
+            </Link>
           </div>
 
           <div className="flex gap-6">

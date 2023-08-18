@@ -34,7 +34,7 @@ const stats = [
   {
     title: "unicorns",
     number: "7",
-  }
+  },
 ];
 
 const Hightlight: React.FC = () => {

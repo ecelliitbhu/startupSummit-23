@@ -134,9 +134,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                       <li key={index}>
                         <Link href={navigator.link}>
                           <Button
-                            className={
-                              "text-white font-light"
-                            }
+                            className={"text-white font-light"}
                             variant={"link"}
                           >
                             <span>{navigator.name}</span>
@@ -148,34 +146,34 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 </ul>
               </div>
 
-                <DropdownMenu>
-                  <DropdownMenuTrigger className={"outline-none"}>
-                    <Button
-                      type="button"
-                      className={"rounded-full focus-visible:outline-none"}
-                    >
-                      Register
-                    </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuSeparator />
-                    <Link
-                      href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
-                      target={"_blank"}
-                    >
-                      <DropdownMenuItem>Investor</DropdownMenuItem>
-                    </Link>
-                    <Link
-                      href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
-                      target={"_blank"}
-                    >
-                      <DropdownMenuItem>Startup</DropdownMenuItem>
-                    </Link>
-                    <Link href={"/attendee"}>
-                      <DropdownMenuItem>Attendee</DropdownMenuItem>
-                    </Link>
-                  </DropdownMenuContent>
-                </DropdownMenu>
+              <DropdownMenu>
+                <DropdownMenuTrigger className={"outline-none"}>
+                  <Button
+                    type="button"
+                    className={"rounded-full focus-visible:outline-none"}
+                  >
+                    Register
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuSeparator />
+                  <Link
+                    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
+                    target={"_blank"}
+                  >
+                    <DropdownMenuItem>Investor</DropdownMenuItem>
+                  </Link>
+                  <Link
+                    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
+                    target={"_blank"}
+                  >
+                    <DropdownMenuItem>Startup</DropdownMenuItem>
+                  </Link>
+                  <Link href={"/attendee"}>
+                    <DropdownMenuItem>Attendee</DropdownMenuItem>
+                  </Link>
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
         </div>

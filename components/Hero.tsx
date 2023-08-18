@@ -23,11 +23,11 @@ import heroVideo from "@/public/vid/video.mp4";
 
 import Hightlight from "@/components/highlight";
 import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuSeparator,
-    DropdownMenuTrigger
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 const Home: React.FC = () => {
   return (
@@ -45,7 +45,7 @@ const Home: React.FC = () => {
               muted
               style={{
                 position: "absolute",
-                  backgroundAttachment:"fixed",
+                backgroundAttachment: "fixed",
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
@@ -60,7 +60,6 @@ const Home: React.FC = () => {
             {/*  alt="overlay"*/}
             {/*/>*/}
             <div></div>{" "}
-
             <div
               className="mt-auto flex items-center space-x-4"
               style={{ color: "white" }}
@@ -71,43 +70,44 @@ const Home: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Icons.location size={40} strokeWidth={1.25} />
-                <b className="ml-2 text-xl lg:text-2xl">TAJ&nbsp; YESHWANTPUR, BENGALURU</b>
+                <b className="ml-2 text-xl lg:text-2xl">
+                  TAJ&nbsp; YESHWANTPUR, BENGALURU
+                </b>
               </div>
             </div>
-              <div className="  ">
-                  {/*<Button type="button" title="Start buying" size="lg">*/}
-                  {/*    REGISTER*/}
-                  {/*</Button>*/}
-                  {/*<DropdownMenu>*/}
-                  {/*    <DropdownMenuTrigger className={"outline-none"}>*/}
-                  {/*        <Button*/}
-                  {/*            type="button"*/}
-                  {/*            className={"rounded-full focus-visible:outline-none"}*/}
-                  {/*        >*/}
-                  {/*            Register*/}
-                  {/*        </Button>*/}
-                  {/*    </DropdownMenuTrigger>*/}
-                  {/*    <DropdownMenuContent>*/}
-                  {/*        <DropdownMenuSeparator />*/}
-                  {/*        <Link*/}
-                  {/*            href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}*/}
-                  {/*            target={"_blank"}*/}
-                  {/*        >*/}
-                  {/*            <DropdownMenuItem>Investor</DropdownMenuItem>*/}
-                  {/*        </Link>*/}
-                  {/*        <Link*/}
-                  {/*            href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}*/}
-                  {/*            target={"_blank"}*/}
-                  {/*        >*/}
-                  {/*            <DropdownMenuItem>Startup</DropdownMenuItem>*/}
-                  {/*        </Link>*/}
-                  {/*        <Link href={"/attendee"}>*/}
-                  {/*            <DropdownMenuItem>Attendee</DropdownMenuItem>*/}
-                  {/*        </Link>*/}
-                  {/*    </DropdownMenuContent>*/}
-                  {/*</DropdownMenu>*/}
-              </div>
-
+            <div className="  ">
+              {/*<Button type="button" title="Start buying" size="lg">*/}
+              {/*    REGISTER*/}
+              {/*</Button>*/}
+              {/*<DropdownMenu>*/}
+              {/*    <DropdownMenuTrigger className={"outline-none"}>*/}
+              {/*        <Button*/}
+              {/*            type="button"*/}
+              {/*            className={"rounded-full focus-visible:outline-none"}*/}
+              {/*        >*/}
+              {/*            Register*/}
+              {/*        </Button>*/}
+              {/*    </DropdownMenuTrigger>*/}
+              {/*    <DropdownMenuContent>*/}
+              {/*        <DropdownMenuSeparator />*/}
+              {/*        <Link*/}
+              {/*            href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}*/}
+              {/*            target={"_blank"}*/}
+              {/*        >*/}
+              {/*            <DropdownMenuItem>Investor</DropdownMenuItem>*/}
+              {/*        </Link>*/}
+              {/*        <Link*/}
+              {/*            href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}*/}
+              {/*            target={"_blank"}*/}
+              {/*        >*/}
+              {/*            <DropdownMenuItem>Startup</DropdownMenuItem>*/}
+              {/*        </Link>*/}
+              {/*        <Link href={"/attendee"}>*/}
+              {/*            <DropdownMenuItem>Attendee</DropdownMenuItem>*/}
+              {/*        </Link>*/}
+              {/*    </DropdownMenuContent>*/}
+              {/*</DropdownMenu>*/}
+            </div>
           </div>
 
           <div
@@ -128,9 +128,9 @@ const Home: React.FC = () => {
 
         <hr />
       </div>
-        <div className="absolute bottom-0">
+      <div className="absolute bottom-0">
         <Hightlight />
-        </div>
+      </div>
     </div>
   );
 };
