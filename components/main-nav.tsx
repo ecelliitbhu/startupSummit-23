@@ -1,7 +1,7 @@
 "use client";
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
-import logo from "@/public/logo/mainLogo.svg";
+import logo from "@/public/logo/whitelogo.svg";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -32,7 +32,7 @@ const nav = [
   },
   {
     name: "Events",
-    link: "",
+    link: "/#events",
   },
   {
     name: "Agenda",
@@ -70,7 +70,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
               <Link
                 href="/"
                 aria-label="logo"
-                className="flex space-x-2 items-center"
+                className="flex -m-4 items-center"
               >
                 {/*<div aria-hidden="true" className="flex space-x-1">*/}
                 {/*  <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>*/}
@@ -81,7 +81,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 {/*</span>*/}
                 <Image
                   src={logo}
-                  width={80}
+                  width={150}
                   height={80}
                   // className={'mix-blend-multiply'}
                   alt="startup summit logo"
@@ -120,7 +120,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     lg:p-0  
                     lg:bg-transparent lg:w-auto"
             >
-              <div className="text-gray-400 dark:text-gray-300 lg:pr-4 lg:w-auto w-full lg:pt-0">
+              <div className="text-gray-400 dark:text-gray-300 lg:pr-4  lg:w-auto w-full lg:pt-0">
                 <ul
                   className=" 
                             tracking-wide

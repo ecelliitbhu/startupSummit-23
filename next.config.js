@@ -16,6 +16,8 @@ const nextConfig = {
       "firebasestorage.googleapis.com",
       "cdn-icons-png.flaticon.com",
       "flowbite.s3.amazonaws.com",
+        "crust.winsomethemes.com",
+        "upload.wikimedia.org",
     ],
   },
   webpack:(config,{ isServer})=>{

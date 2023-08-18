@@ -22,6 +22,13 @@ import Link from "next/link";
 import heroVideo from "@/public/vid/video.mp4";
 
 import Hightlight from "@/components/highlight";
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
+    DropdownMenuTrigger
+} from "@/components/ui/dropdown-menu";
 const Home: React.FC = () => {
   return (
     <div className="w-[100%] h-[100vh] overflow-x-hidden ">
@@ -60,17 +67,45 @@ const Home: React.FC = () => {
             >
               <div className="flex items-center">
                 <Icons.calendar size={40} strokeWidth={1.25} />
-                <b className="ml-2 text-xl lg:text-2xl">AUGUST 20-22</b>
+                <b className="ml-2 text-xl lg:text-2xl">OCTOBER 28-29</b>
               </div>
               <div className="flex items-center">
                 <Icons.location size={40} strokeWidth={1.25} />
-                <b className="ml-2 text-xl lg:text-2xl">BENGALURU</b>
+                <b className="ml-2 text-xl lg:text-2xl">TAJ&nbsp; YESHWANTPUR, BENGALURU</b>
               </div>
             </div>
-              <div className="flex justify-center mt-2 mb-2 ">
-                  <Button type="button" title="Start buying" size="lg">
-                      REGISTER
-                  </Button>
+              <div className="  ">
+                  {/*<Button type="button" title="Start buying" size="lg">*/}
+                  {/*    REGISTER*/}
+                  {/*</Button>*/}
+                  {/*<DropdownMenu>*/}
+                  {/*    <DropdownMenuTrigger className={"outline-none"}>*/}
+                  {/*        <Button*/}
+                  {/*            type="button"*/}
+                  {/*            className={"rounded-full focus-visible:outline-none"}*/}
+                  {/*        >*/}
+                  {/*            Register*/}
+                  {/*        </Button>*/}
+                  {/*    </DropdownMenuTrigger>*/}
+                  {/*    <DropdownMenuContent>*/}
+                  {/*        <DropdownMenuSeparator />*/}
+                  {/*        <Link*/}
+                  {/*            href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}*/}
+                  {/*            target={"_blank"}*/}
+                  {/*        >*/}
+                  {/*            <DropdownMenuItem>Investor</DropdownMenuItem>*/}
+                  {/*        </Link>*/}
+                  {/*        <Link*/}
+                  {/*            href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}*/}
+                  {/*            target={"_blank"}*/}
+                  {/*        >*/}
+                  {/*            <DropdownMenuItem>Startup</DropdownMenuItem>*/}
+                  {/*        </Link>*/}
+                  {/*        <Link href={"/attendee"}>*/}
+                  {/*            <DropdownMenuItem>Attendee</DropdownMenuItem>*/}
+                  {/*        </Link>*/}
+                  {/*    </DropdownMenuContent>*/}
+                  {/*</DropdownMenu>*/}
               </div>
 
           </div>

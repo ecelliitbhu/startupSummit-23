@@ -13,11 +13,11 @@ import panel from "@/public/assets/panel1-min.jpg";
 import Image from "next/image";
 const About: React.FC = () => {
   return (
-    <div>
+    <div id={"events"}>
       <div className="container mx-auto px-6 text-center md:px-12">
         <div className="mb-16">
           <h2 className="mt-14 mb-4 text-center text-2xl font-bold  md:text-4xl capitalize">
-            Why should you attend
+            Events
           </h2>
           {/*<p className="text-gray-600 dark:text-gray-300 lg:mx-auto lg:w-8/12">*/}
           {/*    Tailus prides itself not only on award-winning technology, but also on the talent of its*/}
@@ -38,7 +38,7 @@ const About: React.FC = () => {
             </div>
             <div className="space-y-4 text-center">
               <div>
-                <h4 className="text-lg">Investment Pitching Opportunities</h4>
+                <h4 className="text-lg">Pitch Pavilion</h4>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ const About: React.FC = () => {
             </div>
             <div className="space-y-4 text-center">
               <div>
-                <h4 className="text-lg">Exhibition Opportunity</h4>
+                <h4 className="text-lg">Startup Street</h4>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const About: React.FC = () => {
             </div>
             <div className="space-y-4 text-center">
               <div>
-                <h4 className="text-lg">Hearing from Industry Experts</h4>
+                <h4 className="text-lg">Keynote Talks</h4>
               </div>
             </div>
           </div>
@@ -127,7 +127,7 @@ const About: React.FC = () => {
             </div>
             <div className="space-y-4 text-center">
               <div>
-                <h4 className="text-lg">Fireside chats</h4>
+                <h4 className="text-lg">Fireside Chats</h4>
               </div>
             </div>
           </div>

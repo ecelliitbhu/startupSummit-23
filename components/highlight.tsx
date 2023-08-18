@@ -31,6 +31,10 @@ const stats = [
     title: "speakers",
     number: "30+",
   },
+  {
+    title: "unicorns",
+    number: "7",
+  }
 ];
 
 const Hightlight: React.FC = () => {
