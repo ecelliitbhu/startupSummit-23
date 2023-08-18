@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from "react";
 import Image from "next/image";
-import ecell from "@/public/logo/E-Cell (2).png";
-import assi from "@/public/logo/AASSII.png";
-import aiba from "@/public/logo/AIBA (2).png";
-import saic from "@/public/logo/SAIC (2).png";
-import promgf from "@/public/logo/proMFG (2).png";
-import kdem from "@/public/logo/KDEM (2).png";
+import ecell from "@/public/logo/E-Cell.png";
+import assi from "@/public/logo/AASSI.png";
+import aiba from "@/public/logo/AIBA.png";
+import saic from "@/public/logo/SAIC.png";
+import promgf from "@/public/logo/proMFG.png";
+import kdem from "@/public/logo/KDEM.png";
 import bg from "@/public/bbblurry.svg";
 
 interface OwnProps {}
