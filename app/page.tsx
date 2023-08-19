@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import Content from "@/components/Content";
+import Content from "@/components/contents";
 import About from "@/components/About";
 import Carousel from "@/components/car";
 import Hightlight from "@/components/highlight";

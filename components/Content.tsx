@@ -12,7 +12,7 @@ import {
   useTransform,
   MotionValue,
 } from "framer-motion";
-import bg from "@/public/cool-background.svg";
+import bg from "@/public/blobanimation.svg";
 
 function useParallax(value: MotionValue<number>, distance: number) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -94,7 +94,7 @@ const Content: React.FC = () => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        backgroundAttachment: "fixed",
+        // backgroundAttachment: "fixed",
       }}
     >
       <div className="relative">

@@ -79,7 +79,7 @@ const speakingOpporunities = [
 
 const Footer = () => {
   return (
-    <footer className="rounded-xl bg-gray-200 pt-1 mt-4">
+    <footer className="rounded-xl bg-gray-200 pt-1 ">
       <div className="container m-auto space-y-8 px-6 py-5 text-gray-600 md:px-12 lg:px-20">
         <div className="flex flex-wrap justify-between items-center gap-4 border-b pb-2">
           <div className="flex items-center flex-wrap gap-6">

@@ -116,11 +116,11 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     lg:flex lg:flex-row flex-col
                     flex-wrap justify-end items-center 
                     gap-6 p-6 rounded-xl 
-                    bg-white dark:bg-gray-900 lg:gap-0 
+                    bg-black dark:bg-gray-900 lg:gap-0
                     lg:p-0  
                     lg:bg-transparent lg:w-auto"
             >
-              <div className="text-black dark:text-gray-300 lg:pr-4  lg:w-auto w-full lg:pt-0">
+              <div className="text-white dark:text-white lg:pr-4 lg:w-auto w-full lg:pt-0">
                 <ul
                   className=" 
                             tracking-wide
@@ -134,7 +134,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                       <li key={index}>
                         <Link href={navigator.link}>
                           <Button
-                            className={"text-black font-light"}
+                            className={"text-white  font-light dark:text-black"}
                             variant={"link"}
                           >
                             <span>{navigator.name}</span>
