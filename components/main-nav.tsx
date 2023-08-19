@@ -8,8 +8,15 @@ import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuGroup,
   DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuPortal,
   DropdownMenuSeparator,
+  DropdownMenuShortcut,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 interface OwnProps {}
@@ -59,21 +66,29 @@ const Navbar: FunctionComponent<Props> = (props) => {
               id="toggle_nav"
               className="hidden peer"
             />
-            <div className="w-full px-6 flex justify-between lg:w-max md:px-0">
+            <div className="w-full px-6 flex justify-between items-center lg:w-max md:px-0">
               <Link
                 href="/"
                 aria-label="logo"
                 className="flex -m-4 items-center"
               >
+                {/*<div aria-hidden="true" className="flex space-x-1">*/}
+                {/*  <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>*/}
+                {/*  <div className="h-6 w-2 bg-teal-500"></div>*/}
+                {/*</div>*/}
+                {/*<span className="text-2xl font-bold text-green-900 dark:text-white">*/}
+                {/*  E-Cell*/}
+                {/*</span>*/}
                 <Image
                   src={logo}
                   width={150}
                   height={80}
+                  // className={'mix-blend-multiply'}
                   alt="startup summit logo"
                 />
               </Link>
 
-              <div className="flex items-center lg:hidden max-h-10">
+              <div className="flex items-center lg:hidden max-h-10 mx-4">
                 <label
                   role="button"
                   htmlFor="toggle_nav"
@@ -105,7 +120,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                     lg:p-0  
                     lg:bg-transparent lg:w-auto"
             >
-              <div className="text-gray-400 dark:text-gray-300 lg:pr-4  lg:w-auto w-full lg:pt-0">
+              <div className="text-black dark:text-gray-300 lg:pr-4  lg:w-auto w-full lg:pt-0">
                 <ul
                   className=" 
                             tracking-wide
@@ -119,7 +134,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                       <li key={index}>
                         <Link href={navigator.link}>
                           <Button
-                            className={"text-white font-light"}
+                            className={"text-black font-light"}
                             variant={"link"}
                           >
                             <span>{navigator.name}</span>
