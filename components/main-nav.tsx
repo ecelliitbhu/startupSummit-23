@@ -8,15 +8,8 @@ import Link from "next/link";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 interface OwnProps {}
@@ -72,18 +65,10 @@ const Navbar: FunctionComponent<Props> = (props) => {
                 aria-label="logo"
                 className="flex -m-4 items-center"
               >
-                {/*<div aria-hidden="true" className="flex space-x-1">*/}
-                {/*  <div className="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>*/}
-                {/*  <div className="h-6 w-2 bg-teal-500"></div>*/}
-                {/*</div>*/}
-                {/*<span className="text-2xl font-bold text-green-900 dark:text-white">*/}
-                {/*  E-Cell*/}
-                {/*</span>*/}
                 <Image
                   src={logo}
                   width={150}
                   height={80}
-                  // className={'mix-blend-multiply'}
                   alt="startup summit logo"
                 />
               </Link>

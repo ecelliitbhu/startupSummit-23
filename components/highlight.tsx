@@ -39,16 +39,9 @@ const stats = [
 
 const Hightlight: React.FC = () => {
   return (
-    <div className="">
-      {/*<div className="xl:container px-6 text-gray-500 md:px-12 m-auto mb-6">*/}
-      {/*  <div className={"flex justify-center"}>*/}
-      {/*    <h2 className="mt-8 text-2xl text-black font-bold md:text-4xl">*/}
-      {/*      Summit Highlights*/}
-      {/*    </h2>*/}
-      {/*  </div>*/}
-      {/*</div>*/}
-      <div className="flex-1 space-y-4 p-8 px-28 pt-14">
-        <div className="flex ">
+    <div className="w-[100%]">
+      <div className="flex-1 space-y-4 p-8 px-4 lg:px-28 pt-14">
+        <div className="flex w-[100%] ">
           {stats.map((stat, index) => {
             return (
               <motion.div
@@ -64,16 +57,16 @@ const Hightlight: React.FC = () => {
                 exit={{ opacity: 0 }}
                 key={index}
                 className={
-                  "rounded-full w-36 h-36  bg-primary  -m-2 border-4 justify-center items-center pt-2 "
+                  "rounded-full w-24 h-24  sm:w-28 sm:h-28 lg:w-32 lg:h-32  bg-primary overflow-hidden -m-2 border-4 flex flex-col justify-center items-center lg:pt-2 "
                 }
               >
-                <CardHeader className=" text-center space-y-0 pb-2 ">
-                  <div className="text-2xl font-bold text-primary-foreground">
+                <CardHeader className=" text-center pb-2 lg:pb-2 ">
+                  <div className="text-ld sm:lg md:text-2xl font-bold text-primary-foreground">
                     {stat.number}
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardTitle className="text-sm text-center font-medium text-primary-foreground">
+                  <CardTitle className="text-xs md:text-sm text-center font-medium text-primary-foreground">
                     {stat.title.toUpperCase()}
                   </CardTitle>
                 </CardContent>
