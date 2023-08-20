@@ -3,7 +3,7 @@ import React from "react";
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import heroVideo from "@/public/vid/ecellvideo.mp4";
+import heroVideo from "@/public/vid/video.mp4";
 
 import Hightlight from "@/components/highlight";
 import {
@@ -53,13 +53,13 @@ const Home: React.FC = () => {
                 </b>
               </div>
             </div>
-            <div className="pt-32 text-center  ">
+            <div className="pt-8 text-center  ">
               <DropdownMenu>
                 <DropdownMenuTrigger className={"outline-none"}>
                   <Button
                     type="button"
                     size="lg"
-                    className={"    focus-visible:outline-none"}
+                    className={"bg-[#02bef2] shadow-md  shadow-[#0483ba] hover:bg-[#02bef2]  focus-visible:outline-none"}
                   >
                     REGISTER
                   </Button>

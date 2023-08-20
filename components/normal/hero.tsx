@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/select";
 import { GoLocation } from "react-icons/go";
 import { BsFillCalendarCheckFill } from "react-icons/bs";
+import heroVideo from "@/public/vid/video.mp4";
 
 const HeroSection = () => {
   return (
@@ -50,7 +51,7 @@ const HeroSection = () => {
       >
         {/* Place the mp4 video under "video" folder of public directory */}
         <source
-          src={require("../../public/video/normal_video.mp4")}
+          src={heroVideo}
           type="video/mp4"
         />
       </video>
