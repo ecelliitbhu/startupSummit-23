@@ -3,7 +3,7 @@ import React from "react";
 import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import heroVideo from "@/public/vid/video.mp4";
+import heroVideo from "@/public/vid/ecellvideo.mp4";
 
 import Hightlight from "@/components/highlight";
 import {
