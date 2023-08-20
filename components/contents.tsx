@@ -2,68 +2,69 @@
 import React from "react";
 
 import bg from "@/public/blobanimation.svg";
-import { CheckIcon } from '@radix-ui/react-icons'
-
+import { CheckIcon } from "@radix-ui/react-icons";
 
 const Detail = [
-    {
-        detail: "IIT Alumni Founders",
-    },
-    {
-        detail:
-            " VCs, Angels and Organisations looking at funding India’s rapidly growing startup ecosystem",
-    },
-    {
-        detail: "Early-stage founders, pre-seed and seed",
-    },
+  {
+    detail: "IIT Alumni Founders",
+  },
+  {
+    detail:
+      " VCs, Angels and Organisations looking at funding India’s rapidly growing startup ecosystem",
+  },
+  {
+    detail: "Early-stage founders, pre-seed and seed",
+  },
 
-    {
-        detail: "Enterprises providing services to startups",
-    },
-    {
-        detail:
-            "Technology Firms and End-User Businesses having startup ecosystems and partnerships",
-    },
-    {
-        detail: "Policymakers",
-    },
-    {
-        detail: " Mentors, Experts, Academicians, and Students",
-    },
+  {
+    detail: "Enterprises providing services to startups",
+  },
+  {
+    detail:
+      "Technology Firms and End-User Businesses having startup ecosystems and partnerships",
+  },
+  {
+    detail: "Policymakers",
+  },
+  {
+    detail: " Mentors, Experts, Academicians, and Students",
+  },
 ];
 
-
 const Content: React.FC = () => {
-    return (
-        <div
-            className="w-[calc(100%-2rem)]] min-h-screen p-16 "
-            style={{
-                backgroundImage: `url(${bg.src})`,
-                backgroundRepeat: "no-repeat",
-                backgroundPosition: "center",
-                backgroundSize: "cover",
-            }}
-        >
-            <div className={`  w-[calc(100%-2rem)]] min-h-[100%]  bg-opacity-10 backdrop-blur-md border border-opacity-20 border-solid border-white backdrop-filter shadow-lg rounded-lg`}>
-                <h2 className="pt-8 text-3xl font-bold text-white md:text-4xl dark:text-white capitalize text-center">
-                    who should attend
-                </h2>
-                  <div className=' my-4 lg:mt-14 grid grid-cols-1 md:grid-cols-2 content-around justify-items-start pl-16 m-auto '>
-                      {
-                          Detail.map((data,index)=>{
-                              return <div className='flex  items-center max-w-md h-16  shadow lg:m-4 lg:p-1' key={index}>
-                                  <div><CheckIcon className='text-[#03ffd5] w-8 h-8 bg-[#0f312b] rounded-full text-2xl mr-1'/>
-                                  </div>
-                                  <p>{data.detail}</p>
-                              </div>
-                          })
-                      }
-
-                  </div>
-
-
-            </div>
+  return (
+    <div
+      className="w-[calc(100%-2rem)]] min-h-screen p-16 "
+      style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    >
+      <div
+        className={`  w-[calc(100%-2rem)]] min-h-[100%]  bg-opacity-10 backdrop-blur-md border border-opacity-20 border-solid border-white backdrop-filter shadow-lg rounded-lg`}
+      >
+        <h2 className="pt-8 text-3xl font-bold text-white md:text-4xl dark:text-white capitalize text-center">
+          who should attend
+        </h2>
+        <div className=" my-4 lg:mt-14 grid grid-cols-1 md:grid-cols-2 content-around justify-items-start pl-16 m-auto ">
+          {Detail.map((data, index) => {
+            return (
+              <div
+                className="flex  items-center max-w-md h-16  shadow lg:m-4 lg:p-1"
+                key={index}
+              >
+                <div>
+                  <CheckIcon className="text-[#03ffd5] w-8 h-8 bg-[#0f312b] rounded-full text-2xl mr-1" />
+                </div>
+                <p>{data.detail}</p>
+              </div>
+            );
+          })}
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 export default Content;

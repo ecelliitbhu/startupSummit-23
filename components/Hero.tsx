@@ -55,32 +55,33 @@ const Home: React.FC = () => {
             </div>
             <div className="pt-32 text-center  ">
               <DropdownMenu>
-                  <DropdownMenuTrigger className={"outline-none"}>
-                      <Button
-                          type="button" size="lg"
-                          className={"    focus-visible:outline-none"}
-                      >
-                          REGISTER
-                      </Button>
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                      <DropdownMenuSeparator />
-                      <Link
-                          href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
-                          target={"_blank"}
-                      >
-                          <DropdownMenuItem>Investor</DropdownMenuItem>
-                      </Link>
-                      <Link
-                          href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
-                          target={"_blank"}
-                      >
-                          <DropdownMenuItem>Startup</DropdownMenuItem>
-                      </Link>
-                      <Link href={"/attendee"}>
-                          <DropdownMenuItem>Attendee</DropdownMenuItem>
-                      </Link>
-                  </DropdownMenuContent>
+                <DropdownMenuTrigger className={"outline-none"}>
+                  <Button
+                    type="button"
+                    size="lg"
+                    className={"    focus-visible:outline-none"}
+                  >
+                    REGISTER
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent>
+                  <DropdownMenuSeparator />
+                  <Link
+                    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
+                    target={"_blank"}
+                  >
+                    <DropdownMenuItem>Investor</DropdownMenuItem>
+                  </Link>
+                  <Link
+                    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
+                    target={"_blank"}
+                  >
+                    <DropdownMenuItem>Startup</DropdownMenuItem>
+                  </Link>
+                  <Link href={"/attendee"}>
+                    <DropdownMenuItem>Attendee</DropdownMenuItem>
+                  </Link>
+                </DropdownMenuContent>
               </DropdownMenu>
             </div>
           </div>
@@ -104,9 +105,9 @@ const Home: React.FC = () => {
         <hr />
       </div>
       <div className="absolute bottom-0">
-          <div className='flex items-center justify-center  '>
-        <Hightlight />
-      </div>
+        <div className="flex items-center justify-center  ">
+          <Hightlight />
+        </div>
       </div>
     </div>
   );

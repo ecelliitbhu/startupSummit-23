@@ -30,7 +30,7 @@ export const EventEmbed: React.FC = () => {
 
   return (
     <>
-      <div id="insider-embed" className='bg-white'></div>
+      <div id="insider-embed" className="bg-white"></div>
     </>
   );
 };
