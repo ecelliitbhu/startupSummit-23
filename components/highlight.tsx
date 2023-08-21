@@ -1,14 +1,8 @@
 "use client";
 import React from "react";
-import demo1 from "@/public/assets/demo1.svg";
-import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue,
 } from "framer-motion";
 const stats = [
   {
@@ -49,24 +43,21 @@ const Hightlight: React.FC = () => {
                 transition={{
                   duration: 0.5,
                   delay: index * 0.3,
-                  // type: "spring",
-                  // stiffness: 200,
-                  // damping: 15
                 }}
                 animate={{ scale: 1 }}
                 exit={{ opacity: 0 }}
                 key={index}
                 className={
-                  "rounded-full w-24 h-24  sm:w-28 sm:h-28 lg:w-32 lg:h-32  bg-primary overflow-hidden -m-2 border-4 flex flex-col justify-center items-center lg:pt-2 "
+                  "rounded-full w-24 h-24  sm:w-28 sm:h-28 lg:w-32 lg:h-32 text-white  bg-[#02bef2] overflow-hidden -m-2 border-2 border-[#0483ba] flex flex-col justify-center items-center lg:pt-2 "
                 }
               >
                 <CardHeader className=" text-center pb-2 lg:pb-2 ">
-                  <div className="text-ld sm:lg md:text-2xl font-bold text-primary-foreground">
+                  <div className="text-ld sm:lg md:text-2xl font-bold ">
                     {stat.number}
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <CardTitle className="text-xs md:text-sm text-center font-medium text-primary-foreground">
+                  <CardTitle className="text-xs md:text-sm text-center font-medium">
                     {stat.title.toUpperCase()}
                   </CardTitle>
                 </CardContent>

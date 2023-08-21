@@ -21,6 +21,7 @@ const overcallCordinator = [
     email: "dheraj.daga.app12@iitbhu.ac.in",
     phone: "+918090672982",
   },
+
 ];
 const iitBhuAlumni = [
   {
@@ -71,6 +72,13 @@ const speakingOpporunities = [
     name: "Alysa Lobo",
     email: "alysa.promfgmedia.com",
     phone: "+919591230004",
+  },
+];
+const entrepreneurship = [
+  {
+    name: "Parth Gupta",
+    email: "parth@ecellitbhu.ac.in",
+    phone: "+919769523680",
   },
 ];
 
@@ -301,9 +309,9 @@ const Footer = () => {
           </div>
           <div>
             <h6 className="text-lg font-medium text-cyan-900">
-              For Sponsorship Opportunities
+              For Sponsorship & Speaking Opportunities
             </h6>
-            <div className={"flex flex-col items-start mt-5 space-y-2"}>
+            <div className={"flex flex-col items-start  "}>
               <ul className="list-inside space-y-4">
                 {speakingOpporunities.map((item, index) => {
                   return (
@@ -339,11 +347,11 @@ const Footer = () => {
           </div>
           <div>
             <h6 className="text-lg font-medium text-cyan-900">
-              For Speaking Opportunities
+              Entrepreneurship Cell
             </h6>
             <div className={"flex flex-col items-start mt-5 space-y-2"}>
               <ul className="list-inside space-y-4">
-                {speakingOpporunities.map((item, index) => {
+                {entrepreneurship.map((item, index) => {
                   return (
                     <div
                       key={index}
