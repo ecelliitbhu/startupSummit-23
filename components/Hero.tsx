@@ -102,7 +102,7 @@ const Home: React.FC = () => {
 
         <hr />
       </div>
-      <div className="absolute bottom-0">
+      <div className="absolute bottom-6 md:bottom-2">
         <div className="flex items-center justify-center  ">
           <Hightlight />
         </div>
