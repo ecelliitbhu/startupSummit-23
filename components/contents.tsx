@@ -34,7 +34,7 @@ const Detail = [
 const Content: React.FC = () => {
   return (
     <div
-      className="w-[calc(100%-2rem)]] min-h-screen p-16 "
+      className="w-[calc(100%-2rem)]] max-h-max p-2 sm:p-16 "
       style={{
         backgroundImage: `url(${bg.src})`,
         backgroundRepeat: "no-repeat",
@@ -48,7 +48,7 @@ const Content: React.FC = () => {
         <h2 className="pt-8 text-3xl font-bold text-white md:text-4xl dark:text-white capitalize text-center">
           who should attend
         </h2>
-        <div className=" my-4 lg:mt-14 grid grid-cols-1 md:grid-cols-2 content-around justify-items-start pl-16 m-auto ">
+        <div className=" my-4 lg:mt-14 grid grid-cols-1 md:grid-cols-2 content-around justify-items-start pl-2 sm:pl-16 m-auto ">
           {Detail.map((data, index) => {
             return (
               <div

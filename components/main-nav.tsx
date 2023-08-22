@@ -47,10 +47,10 @@ const Navbar: FunctionComponent<Props> = (props) => {
   return (
     <header
       className={
-        "w-[100%] sticky z-10 top-8 max-w-[76.5rem] m-auto lg:p-0 px-4"
+        "w-[100%] sticky z-10 top-8 max-w-[76.5rem] m-auto lg:p-0 "
       }
     >
-      <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed">
+      <nav className="w-full rounded-full z-10 bg-background  opacity-95  md:absolute fixed mt-1">
         <div className="m-auto px-2 md:px-12 lg:px-7">
           <div className="flex flex-wrap items-center justify-between py-4 gap-6 md:py-2 md:gap-0 relative">
             <input
@@ -67,9 +67,10 @@ const Navbar: FunctionComponent<Props> = (props) => {
               >
                 <Image
                   src={logo}
-                  width={150}
+                  width={80}
                   height={80}
                   alt="startup summit logo"
+                  className='w-16 sm:w-32'
                 />
               </Link>
 

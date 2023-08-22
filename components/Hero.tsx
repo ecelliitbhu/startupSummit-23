@@ -15,9 +15,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 const Home: React.FC = () => {
   return (
-    <div className="w-[100%] h-[100vh] overflow-x-hidden relative ">
+    <div className="sm:w-[100%] h-[100vh] overflow-x-hidden relative ">
       <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7 ">
-        <div className="py-40  pb-0 lg:pb-0 px-20 flex-col justify-center items-center   dark:lg:w-12/12 mx-auto">
+        <div className="py-40  pb-0 lg:pb-0 sm:px-20 flex-col justify-center items-center   dark:lg:w-12/12 mx-auto">
           {/* video */}
 
           <div id="wrapper">
@@ -37,18 +37,16 @@ const Home: React.FC = () => {
                 top: 0,
               }}
             />
-            <div></div>{" "}
             <div
-              className="mt-auto flex items-center space-x-4"
-              style={{ color: "white" }}
+              className="lg:mt-auto flex justify-evenly items-center lg:space-x-4 text-white"
             >
               <div className="flex items-center">
-                <Icons.calendar size={40} strokeWidth={1.25} />
-                <b className="ml-2 text-xl lg:text-2xl">OCTOBER 28-29</b>
+                <Icons.calendar  className="w-8 "/>
+                <b className="text-xs sm:text-lg  lg:text-2xl">OCTOBER 28-29</b>
               </div>
-              <div className="flex items-center">
-                <Icons.location size={40} strokeWidth={1.25} />
-                <b className="ml-2 text-xl lg:text-2xl">
+              <div className="flex items-center  sm:mt-0">
+                <Icons.location className=" w-8 " />
+                <b className=" text-xs sm:text-lg lg:text-2xl">
                   TAJ YESHWANTPUR, BENGALURU
                 </b>
               </div>

@@ -88,7 +88,7 @@ const entrepreneurship = [
 const Footer = () => {
   return (
     <footer className="rounded-xl bg-gray-200 pt-1 ">
-      <div className="container m-auto space-y-8 px-6 py-5 text-gray-600 md:px-12 lg:px-20">
+      <div className="container m-auto space-y-8 sm:px-6 py-5 text-gray-600 md:px-12 lg:px-20">
         <div className="flex flex-wrap justify-between items-center gap-4 border-b pb-2">
           <div className="flex items-center flex-wrap gap-6">
             <Link
@@ -214,41 +214,26 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {/* Company links */}
+        <div className="flex flex-wrap justify-evenly  md:justify-start ">
 
-          {/*<div>*/}
-          {/*  <h6 className="text-lg font-medium text-cyan-900">*/}
-          {/*    E-Cell IIT BHU*/}
-          {/*  </h6>*/}
-          {/*  <ul className="mt-4 list-inside space-y-4">*/}
-          {/*    <li className="pr-12">*/}
-          {/*      <span className="">*/}
-          {/*        E-Cell IIT BHU fosters innovation at IIT BHU Varanasi,*/}
-          {/*        nurturing startups and providing networking opportunities for*/}
-          {/*        aspiring entrepreneurs.*/}
-          {/*      </span>*/}
-          {/*    </li>*/}
-          {/*  </ul>*/}
-          {/*</div>*/}
-          <div>
+          <div className=' w-60 m-1 md:m-1  '>
             <h6 className="text-lg font-medium text-cyan-900">
               Overall Coordinator
             </h6>
-            <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="list-inside space-y-4">
+            <div className={"flex flex-col items-start "}>
+              <ul className="list-inside ">
                 {overcallCordinator.map((item, index) => {
                   return (
                     <div
                       key={index}
                       className="flex flex-col items-start mt-5 space-y-2"
                     >
-                      <li className="pr-12">
+                      <li className="sm:pr-12">
                         <h4 className="">{item.name}</h4>
                         <a
                           href={`mailto:${item.email}`}
                           className={
-                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words"
                           }
                         >
                           {item.email}
@@ -269,24 +254,24 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
+          <div className='  w-60  m-1 md:m-1  '>
             <h6 className="text-lg font-medium text-cyan-900">
               For IIT BHU Alumni
             </h6>
-            <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="list-inside space-y-4">
+            <div className={""}>
+
                 {iitBhuAlumni.map((item, index) => {
                   return (
                     <div
                       key={index}
-                      className="flex flex-col items-start mt-5 space-y-2"
+                      className=" mt-5 space-y-2"
                     >
-                      <li className="pr-12">
+                      <div className="">
                         <h4 className="">{item.name}</h4>
                         <a
                           href={`mailto:${item.email}`}
                           className={
-                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words "
                           }
                         >
                           {item.email}
@@ -300,31 +285,30 @@ const Footer = () => {
                         >
                           {item.phone}
                         </a>
-                      </li>
+                      </div>
                     </div>
                   );
                 })}
-              </ul>
             </div>
           </div>
-          <div>
+          <div className=' w-60 m-1 md:m-1 '>
             <h6 className="text-lg font-medium text-cyan-900">
-              For Sponsorship & Speaking Opportunities
+              For Sponsorship & <br/>Speaking Opportunities
             </h6>
             <div className={"flex flex-col items-start  "}>
-              <ul className="list-inside space-y-4">
+              <ul className="list-inside ">
                 {speakingOpporunities.map((item, index) => {
                   return (
                     <div
                       key={index}
                       className="flex flex-col items-start mt-5 space-y-2"
                     >
-                      <li className="pr-12">
+                      <li className="sm:pr-12">
                         <h4 className="">{item.name}</h4>
                         <a
                           href={`mailto:${item.email}`}
                           className={
-                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words"
                           }
                         >
                           {item.email}
@@ -345,24 +329,24 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div>
+          <div className='  w-60 m-1 md:m-1  '>
             <h6 className="text-lg font-medium text-cyan-900">
               Entrepreneurship Cell
             </h6>
-            <div className={"flex flex-col items-start mt-5 space-y-2"}>
-              <ul className="list-inside space-y-4">
+            <div className={"flex flex-col items-start"}>
+              <ul className="list-inside">
                 {entrepreneurship.map((item, index) => {
                   return (
                     <div
                       key={index}
                       className="flex flex-col items-start mt-5 space-y-2"
                     >
-                      <li className="pr-12">
+                      <li className="sm:pr-12">
                         <h4 className="">{item.name}</h4>
                         <a
                           href={`mailto:${item.email}`}
                           className={
-                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words"
                           }
                         >
                           {item.email}
@@ -380,6 +364,39 @@ const Footer = () => {
                     </div>
                   );
                 })}
+              </ul>
+            </div>
+          </div>
+          <div className='  w-60 m-1  md:m-1  '>
+            <h6 className="text-lg font-medium text-cyan-900">
+              SAIC at IIT BHU
+            </h6>
+            <div className={"flex flex-col items-start "}>
+              <ul className="list-inside ">
+                      <div
+                          className="flex flex-col items-start mt-5 space-y-2"
+                      >
+                        <li className="sm:pr-12">
+                          <h4 className="">Aniket Raj</h4>
+                          <a
+                              href={`mailto:${"alumnicell@itbhu.ac.in"}`}
+                              className={
+                                "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words"
+                              }
+                          >
+                            alumnicell@itbhu.ac.in
+                          </a>
+                          <br />
+                          <a
+                              href={`tel:${"+919342860485"}`}
+                              className={
+                                "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                              }
+                          >
+                            +919342860485
+                          </a>
+                        </li>
+                      </div>
               </ul>
             </div>
           </div>
