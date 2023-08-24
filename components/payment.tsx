@@ -17,7 +17,7 @@ export const EventEmbed: React.FC = () => {
           mountId: "insider-embed",
           eventSlug: "digital-startup-summit-iit-bhu-oct28-2023",
           frameHeight: 400,
-          frameWidth: 800,
+          // frameWidth: 800,
           merchantId: "64d74d70466b3c00080b3e1c",
         });
       }
@@ -29,8 +29,8 @@ export const EventEmbed: React.FC = () => {
   }, []);
 
   return (
-    <>
-      <div id="insider-embed" className="bg-white"></div>
+    < >
+      <div id="insider-embed" className="bg-white w-[100vw-2rem] rounded-md md:w-[40rem]  shadow-xl shadow-primary/10 "></div>
     </>
   );
 };

@@ -35,13 +35,17 @@ const events = [
 
 function Day2() {
   return (
-    <Chrono
-      items={events}
-      flipLayout
-      mode="VERTICAL_ALTERNATING"
-      readMore={true}
-      cardHeight={100}
-    />
+      <div className='min-h-screen w-full'>
+        <Chrono
+            items={events}
+            flipLayout
+            mode="VERTICAL_ALTERNATING"
+            readMore={true}
+            cardHeight={100}
+            slideShow
+
+        />
+      </div>
   );
 }
 
