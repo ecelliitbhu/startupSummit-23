@@ -14,7 +14,7 @@ const Supporter: FunctionComponent<Props> = (props) => {
         <div className="items-center gap-12">
           <div className="items-center mx-auto text-center">
             <h2 className="text-2xl items-center mx-auto font-bold text-white">
-            Supported by
+              Supported by
             </h2>
           </div>
           <div className="mt-8 mx-16 lg:mt-0 md:mx-48 lg:mx-96">

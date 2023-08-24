@@ -50,10 +50,7 @@ const HeroSection = () => {
         }}
       >
         {/* Place the mp4 video under "video" folder of public directory */}
-        <source
-          src={heroVideo}
-          type="video/mp4"
-        />
+        <source src={heroVideo} type="video/mp4" />
       </video>
 
       {/* Event Card */}

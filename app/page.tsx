@@ -10,7 +10,7 @@ export default function Home() {
       <Hero />
 
       <Organizer />
-        <Supporter />
+      <Supporter />
       <Trailblazzers />
       <About />
       <Content />

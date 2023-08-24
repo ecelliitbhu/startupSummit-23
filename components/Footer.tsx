@@ -21,7 +21,6 @@ const overcallCordinator = [
     email: "dheraj.daga.app12@iitbhu.ac.in",
     phone: "+918090672982",
   },
-
 ];
 const iitBhuAlumni = [
   {
@@ -215,8 +214,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex flex-wrap justify-evenly  md:justify-start ">
-
-          <div className=' w-60 m-1 md:m-1  '>
+          <div className=" w-60 m-1 md:m-1  ">
             <h6 className="text-lg font-medium text-cyan-900">
               Overall Coordinator
             </h6>
@@ -254,46 +252,43 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='  w-60  m-1 md:m-1  '>
+          <div className="  w-60  m-1 md:m-1  ">
             <h6 className="text-lg font-medium text-cyan-900">
               For IIT BHU Alumni
             </h6>
             <div className={""}>
-
-                {iitBhuAlumni.map((item, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className=" mt-5 space-y-2"
-                    >
-                      <div className="">
-                        <h4 className="">{item.name}</h4>
-                        <a
-                          href={`mailto:${item.email}`}
-                          className={
-                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words "
-                          }
-                        >
-                          {item.email}
-                        </a>
-                        <br />
-                        <a
-                          href={`tel:${item.phone}`}
-                          className={
-                            "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
-                          }
-                        >
-                          {item.phone}
-                        </a>
-                      </div>
+              {iitBhuAlumni.map((item, index) => {
+                return (
+                  <div key={index} className=" mt-5 space-y-2">
+                    <div className="">
+                      <h4 className="">{item.name}</h4>
+                      <a
+                        href={`mailto:${item.email}`}
+                        className={
+                          "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words "
+                        }
+                      >
+                        {item.email}
+                      </a>
+                      <br />
+                      <a
+                        href={`tel:${item.phone}`}
+                        className={
+                          "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                        }
+                      >
+                        {item.phone}
+                      </a>
                     </div>
-                  );
-                })}
+                  </div>
+                );
+              })}
             </div>
           </div>
-          <div className=' w-60 m-1 md:m-1 '>
+          <div className=" w-60 m-1 md:m-1 ">
             <h6 className="text-lg font-medium text-cyan-900">
-              For Sponsorship & <br/>Speaking Opportunities
+              For Sponsorship & <br />
+              Speaking Opportunities
             </h6>
             <div className={"flex flex-col items-start  "}>
               <ul className="list-inside ">
@@ -329,7 +324,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='  w-60 m-1 md:m-1  '>
+          <div className="  w-60 m-1 md:m-1  ">
             <h6 className="text-lg font-medium text-cyan-900">
               Entrepreneurship Cell
             </h6>
@@ -367,36 +362,34 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className='  w-60 m-1  md:m-1  '>
+          <div className="  w-60 m-1  md:m-1  ">
             <h6 className="text-lg font-medium text-cyan-900">
               SAIC at IIT BHU
             </h6>
             <div className={"flex flex-col items-start "}>
               <ul className="list-inside ">
-                      <div
-                          className="flex flex-col items-start mt-5 space-y-2"
-                      >
-                        <li className="sm:pr-12">
-                          <h4 className="">Aniket Raj</h4>
-                          <a
-                              href={`mailto:${"alumnicell@itbhu.ac.in"}`}
-                              className={
-                                "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words"
-                              }
-                          >
-                            alumnicell@itbhu.ac.in
-                          </a>
-                          <br />
-                          <a
-                              href={`tel:${"+919342860485"}`}
-                              className={
-                                "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
-                              }
-                          >
-                            +919342860485
-                          </a>
-                        </li>
-                      </div>
+                <div className="flex flex-col items-start mt-5 space-y-2">
+                  <li className="sm:pr-12">
+                    <h4 className="">Aniket Raj</h4>
+                    <a
+                      href={`mailto:${"alumnicell@itbhu.ac.in"}`}
+                      className={
+                        "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary break-words"
+                      }
+                    >
+                      alumnicell@itbhu.ac.in
+                    </a>
+                    <br />
+                    <a
+                      href={`tel:${"+919342860485"}`}
+                      className={
+                        "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
+                      }
+                    >
+                      +919342860485
+                    </a>
+                  </li>
+                </div>
               </ul>
             </div>
           </div>

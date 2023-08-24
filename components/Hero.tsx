@@ -37,11 +37,9 @@ const Home: React.FC = () => {
                 top: 0,
               }}
             />
-            <div
-              className="lg:mt-auto flex justify-evenly items-center lg:space-x-4 text-white"
-            >
+            <div className="lg:mt-auto flex justify-evenly items-center lg:space-x-4 text-white">
               <div className="flex items-center">
-                <Icons.calendar  className="w-8 "/>
+                <Icons.calendar className="w-8 " />
                 <b className="text-xs sm:text-lg  lg:text-2xl">OCTOBER 28-29</b>
               </div>
               <div className="flex items-center  sm:mt-0">
@@ -57,7 +55,9 @@ const Home: React.FC = () => {
                   <Button
                     type="button"
                     size="lg"
-                    className={"bg-[#02bef2] shadow-md  shadow-[#0483ba] hover:bg-[#02bef2]  focus-visible:outline-none"}
+                    className={
+                      "bg-[#02bef2] shadow-md  shadow-[#0483ba] hover:bg-[#02bef2]  focus-visible:outline-none"
+                    }
                   >
                     REGISTER
                   </Button>
