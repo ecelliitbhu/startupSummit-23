@@ -10,7 +10,10 @@ type Props = OwnProps;
 
 const Carousel: FunctionComponent<Props> = (props) => {
   return (
-    <div className="p-40 flex flex-wrap items-center justify-center">
+    <div
+      id={"speakers"}
+      className="p-40 flex flex-wrap items-center justify-center"
+    >
       <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
         <svg
           className="absolute bottom-0 left-0 mb-8"
@@ -137,7 +140,6 @@ const Carousel: FunctionComponent<Props> = (props) => {
           <span className="block opacity-75 -mb-1">Lorem</span>
           <div className="flex justify-between">
             <span className="block font-semibold text-xl">Ipsum</span>
-
           </div>
         </div>
       </div>

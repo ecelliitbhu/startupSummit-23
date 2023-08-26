@@ -4,14 +4,18 @@ import About from "@/components/About";
 import Trailblazzers from "@/components/trailblazzers";
 import Organizer from "@/components/Organizer";
 import Supporter from "@/components/Supporter";
+import Carousel from "@/components/Carousel";
+import KeySpeaker from "@/components/KeySpeakers";
+import React from "react";
 export default function Home() {
   return (
     <>
       <Hero />
-
       <Organizer />
-      <Supporter />
+      {/*<Supporter />*/}
       <Trailblazzers />
+      <KeySpeaker />
+      {/*<Carousel />*/}
       <About />
       <Content />
     </>
