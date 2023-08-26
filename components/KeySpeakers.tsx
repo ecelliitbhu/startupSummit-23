@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 import { StaticImageData } from "next/image";
 import img1 from "@/public/Speakers/1.png";
 import img2 from "@/public/Speakers/2.png";
 import img3 from "@/public/Speakers/3.png";
 import img4 from "@/public/Speakers/4.png";
-
+import  {motion} from "framer-motion";
 import { TeamComponent } from "@/components/KeySpeakersCard";
 
 export interface Album {
@@ -56,8 +57,9 @@ const KeySpeaker = () => {
         <h1 className={"-mt-10 flex justify-center text-[3rem]"}>
           Key Speakers
         </h1>
-        <div className="flex flex-wrap justify-center ">
-          {listenNowAlbums.map((album) => (
+        <div className="flex flex-wrap justify-center overflow-x-hidden ">
+          {listenNowAlbums.map((album,index) => (
+              <motion.div initial={{opacity:0 ,x:-100}}  transition={{delay:index*.3,duration:1}} whileInView={{ opacity: 1,x:0 }} viewport={{once:true}}  key={index}>
             <TeamComponent
               key={album.name}
               album={album}
@@ -66,6 +68,7 @@ const KeySpeaker = () => {
               width={200}
               height={150}
             />
+              </motion.div>
           ))}
         </div>
       </section>

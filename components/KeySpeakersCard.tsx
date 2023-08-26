@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ContextMenu, ContextMenuTrigger } from "@/components/ui/context-menu";
 import { Icons } from "@/components/icons";
+import  {motion} from "framer-motion";
 
 export interface Album {
   name: string;
@@ -63,14 +64,6 @@ export function TeamComponent({
             <Icons.linkedin className="h-4 w-4" />
           </Button>
         </Link>
-        {/*<Link href={album.email} target={"_blank"}>*/}
-        {/*    <Button*/}
-        {/*        variant={"outline"}*/}
-        {/*        className="-p-y-4 m-2 text-sm transition-all duration-500 ease-in-out hover:text-red-400"*/}
-        {/*    >*/}
-        {/*        /!*<Icons.mail className="h-4 w-4" />*!/*/}
-        {/*    </Button>*/}
-        {/*</Link>*/}
       </div>
     </div>
   );

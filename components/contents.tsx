@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-
+import  {motion} from "framer-motion";
 import bg from "@/public/blobanimation.svg";
 import { CheckIcon } from "@radix-ui/react-icons";
 
@@ -48,9 +48,12 @@ const Content: React.FC = () => {
         <h2 className="pt-8 text-3xl font-bold text-white md:text-4xl dark:text-white capitalize text-center">
           who should attend
         </h2>
-        <div className=" my-4 lg:mt-14 grid grid-cols-1 md:grid-cols-2 content-around justify-items-start pl-2 sm:pl-16 m-auto ">
+        <div className=" my-4 lg:mt-14 grid grid-cols-1 md:grid-cols-2 content-around justify-items-start pl-2 sm:pl-16 m-auto overflow-hidden">
           {Detail.map((data, index) => {
             return (
+                <motion.div key={index}  initial={{opacity: 0, scale:0}}
+                            transition={{delay: index*.2, duration: .5 ,}}
+                            whileInView={{opacity: 1, scale:1}} viewport={{once: true}}>
               <div
                 className="flex  items-center max-w-md h-16  shadow lg:m-4 lg:p-1"
                 key={index}
@@ -60,6 +63,7 @@ const Content: React.FC = () => {
                 </div>
                 <p>{data.detail}</p>
               </div>
+                </motion.div>
             );
           })}
         </div>

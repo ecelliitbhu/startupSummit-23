@@ -42,8 +42,8 @@ const Hightlight: React.FC = () => {
                   duration: 0.5,
                   delay: index * 0.3,
                 }}
-                animate={{ scale: 1 }}
-                exit={{ opacity: 0 }}
+                whileInView={{ scale: 1 }}
+                viewport={{once:true}}
                 key={index}
                 className={
                   "rounded-full w-16 h-16 xs:w-28 xs:h-28  sm:w-28 sm:h-28 lg:w-32 lg:h-32 text-white  bg-[#02bef2] overflow-hidden -m-2 border-2 border-[#0483ba] flex flex-col justify-center items-center lg:pt-2 "
