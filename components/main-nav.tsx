@@ -68,7 +68,7 @@ const Navbar: FunctionComponent<Props> = (props) => {
                   width={80}
                   height={80}
                   alt="startup summit logo"
-                  className="w-16 sm:w-32"
+                  className=" scale-150 md:ml-2 sm:w-32"
                 />
               </Link>
 
