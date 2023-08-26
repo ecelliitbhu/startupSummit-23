@@ -11,13 +11,17 @@ type Props = OwnProps;
 
 const page: FunctionComponent<Props> = (props) => {
   return (
-    <div className={" min-h-screen max-w-screen pt-44 lg:pt-44 md:flex justify-center align-middle "}>
+    <div
+      className={
+        " min-h-screen max-w-screen pt-44 lg:pt-44 md:flex justify-center align-middle "
+      }
+    >
       <Tabs defaultValue="day1" className=" max-w-screen lg:w-[580px] ">
         <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="day1">Day 1</TabsTrigger>
           <TabsTrigger value="day2">Day 2</TabsTrigger>
         </TabsList>
-        <TabsContent value="day1"   >
+        <TabsContent value="day1">
           <Day1 />
         </TabsContent>
         <TabsContent value="day2">

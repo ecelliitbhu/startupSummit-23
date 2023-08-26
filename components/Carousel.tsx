@@ -1,110 +1,193 @@
-"use client";
-import React from "react";
+import React, { FunctionComponent } from "react";
+import img1 from "@/public/Speakers/1.jpeg";
+import img2 from "@/public/Speakers/2.jpeg";
+import img3 from "@/public/Speakers/3.jpeg";
+import img4 from "@/public/Speakers/4.jpeg";
 import Image from "next/image";
-import { Carousel } from "flowbite";
-import type {
-  CarouselItem,
-  CarouselOptions,
-  CarouselInterface,
-} from "flowbite";
+interface OwnProps {}
 
-const Carousels: React.FC = () => {
+type Props = OwnProps;
+
+const Carousel: FunctionComponent<Props> = (props) => {
   return (
-    <div className="mx-72 rounded-s">
-      <div
-        id="default-carousel"
-        className="relative w-full bg-black rounded-s"
-        data-carousel="slide"
-      >
-        <div className="relative h-64 overflow-hidden rounded-lg md:h-96">
-          <div className="duration-700 ease-in-out" data-carousel-item>
-            <Image
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg"
-              width={400}
-              height={200}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Carousel Image 1"
-            />
-          </div>
-          <div className="duration-700 ease-in-out" data-carousel-item>
-            <Image
-              src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg"
-              width={400}
-              height={200}
-              className="absolute block w-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-              alt="Carousel Image 2"
-            />
-          </div>
-          {/* Add more carousel items here */}
-        </div>
-        <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full border"
-            aria-current="true"
-            aria-label="Slide 1"
-            data-carousel-slide-to="0"
-          ></button>
-          <button
-            type="button"
-            className="w-3 h-3 rounded-full border"
-            aria-current="false"
-            aria-label="Slide 2"
-            data-carousel-slide-to="1"
-          ></button>
-          {/* Add more buttons for other carousel slides */}
-        </div>
-        <button
-          type="button"
-          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
+    <div
+      id={"speakers"}
+      className="p-40 flex flex-wrap items-center justify-center"
+    >
+      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+        <svg
+          className="absolute bottom-0 left-0 mb-8"
+          viewBox="0 0 375 283"
+          fill="none"
+          style={{ transform: "scale(1.5)", opacity: 0.1 }}
         >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-        <button
-          type="button"
-          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
+          <rect
+            x="159.52"
+            y="175"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 159.52 175)"
+            fill="white"
+          />
+          <rect
+            y="107.48"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 0 107.48)"
+            fill="white"
+          />
+        </svg>
+        <div className="relative pt-10 px-10 flex items-center justify-center">
+          <div
+            className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+            style={{
+              background: "radial-gradient(black, transparent 60%)",
+              transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
+              opacity: 0.2,
+            }}
+          ></div>
+          <Image className="relative w-40 h-40 rounded-lg" src={img1} alt="" />
+        </div>
+        <div className="relative text-white px-6 pb-6 mt-6">
+          <span className="block opacity-75 -mb-1">Lorem</span>
+          <div className="flex justify-between">
+            <span className="block font-semibold text-xl">Ipsum</span>
+          </div>
+        </div>
+      </div>
+      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-teal-500 rounded-lg max-w-xs shadow-lg">
+        <svg
+          className="absolute bottom-0 left-0 mb-8"
+          viewBox="0 0 375 283"
+          fill="none"
+          style={{ transform: "scale(1.5)", opacity: 0.1 }}
         >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
+          <rect
+            x="159.52"
+            y="175"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 159.52 175)"
+            fill="white"
+          />
+          <rect
+            y="107.48"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 0 107.48)"
+            fill="white"
+          />
+        </svg>
+        <div className="relative pt-10 px-10 flex items-center justify-center">
+          <div
+            className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+            style={{
+              background: "radial-gradient(black, transparent 60%)",
+              transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
+              opacity: 0.2,
+            }}
+          ></div>
+          <Image className="relative w-40 h-40 rounded-lg" src={img2} alt="" />
+        </div>
+        <div className="relative text-white px-6 pb-6 mt-6">
+          <span className="block opacity-75 -mb-1">Lorem</span>
+          <div className="flex justify-between">
+            <span className="block font-semibold text-xl">Ipsum</span>
+          </div>
+        </div>
+      </div>
+      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-purple-500 rounded-lg max-w-xs shadow-lg">
+        <svg
+          className="absolute bottom-0 left-0 mb-8"
+          viewBox="0 0 375 283"
+          fill="none"
+          style={{ transform: "scale(1.5)", opacity: 0.1 }}
+        >
+          <rect
+            x="159.52"
+            y="175"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 159.52 175)"
+            fill="white"
+          />
+          <rect
+            y="107.48"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 0 107.48)"
+            fill="white"
+          />
+        </svg>
+        <div className="relative pt-10 px-10 flex items-center justify-center">
+          <div
+            className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+            style={{
+              background: "radial-gradient(black, transparent 60%)",
+              transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
+              opacity: 0.2,
+            }}
+          ></div>
+          <Image className="relative w-40 h-40 rounded-lg" src={img3} alt="" />
+        </div>
+        <div className="relative text-white px-6 pb-6 mt-6">
+          <span className="block opacity-75 -mb-1">Lorem</span>
+          <div className="flex justify-between">
+            <span className="block font-semibold text-xl">Ipsum</span>
+          </div>
+        </div>
+      </div>
+      <div className="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+        <svg
+          className="absolute bottom-0 left-0 mb-8"
+          viewBox="0 0 375 283"
+          fill="none"
+          style={{ transform: "scale(1.5)", opacity: 0.1 }}
+        >
+          <rect
+            x="159.52"
+            y="175"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 159.52 175)"
+            fill="white"
+          />
+          <rect
+            y="107.48"
+            width="152"
+            height="152"
+            rx="8"
+            transform="rotate(-45 0 107.48)"
+            fill="white"
+          />
+        </svg>
+        <div className="relative pt-10 px-10 flex items-center justify-center">
+          <div
+            className="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3"
+            style={{
+              background: "radial-gradient(black, transparent 60%)",
+              transform: "rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1)",
+              opacity: 0.2,
+            }}
+          ></div>
+          <Image className="relative w-40 h-40 rounded-lg" src={img4} alt="" />
+        </div>
+        <div className="relative text-white px-6 pb-6 mt-6">
+          <span className="block opacity-75 -mb-1">Lorem</span>
+          <div className="flex justify-between">
+            <span className="block font-semibold text-xl">Ipsum</span>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Carousels;
+export default Carousel;

@@ -29,8 +29,11 @@ export const EventEmbed: React.FC = () => {
   }, []);
 
   return (
-    < >
-      <div id="insider-embed" className="bg-white w-[100vw-2rem] rounded-md md:w-[40rem]  shadow-xl shadow-primary/10 "></div>
+    <>
+      <div
+        id="insider-embed"
+        className="bg-white w-[100vw-2rem] rounded-md md:w-[40rem]  shadow-xl shadow-primary/10 "
+      ></div>
     </>
   );
 };

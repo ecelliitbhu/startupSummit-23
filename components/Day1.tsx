@@ -115,16 +115,16 @@ const events = [
 
 function Day1() {
   return (
-      <div className='min-h-screen text-xs sm:text-md '>
-    <Chrono
-      items={events}
-      flipLayout
-      mode="VERTICAL_ALTERNATING"
-      readMore={true}
-      cardHeight={100}
-      slideShow
-    />
-      </div>
+    <div className="min-h-screen text-xs sm:text-md ">
+      <Chrono
+        items={events}
+        flipLayout
+        mode="VERTICAL_ALTERNATING"
+        readMore={true}
+        cardHeight={100}
+        slideShow
+      />
+    </div>
   );
 }
 

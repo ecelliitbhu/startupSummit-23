@@ -8,6 +8,8 @@ import promgf from "@/public/logo/ProMFG2.png";
 import kdem from "@/public/logo/KDEM2.png";
 import bg from "@/public/bbblurry.svg";
 import Link from "next/link";
+import iitStartup from "@/public/supporter/iit Startups.png";
+import nasscom from "@/public/supporter/nasscom.png";
 
 interface OwnProps {}
 
@@ -16,7 +18,7 @@ type Props = OwnProps;
 const Organizer: FunctionComponent<Props> = (props) => {
   return (
     <div
-      className={`relative  mb-4 flex min-w-min  flex-col items-center overflow-hidden py-20 md:py-40 `}
+      className={`relative flex min-w-min  flex-col items-center overflow-hidden py-20 md:py-40 `}
       style={{
         backgroundImage: `url(${bg.src})`,
         backgroundRepeat: "no-repeat",
@@ -101,6 +103,42 @@ const Organizer: FunctionComponent<Props> = (props) => {
                   height={200}
                   loading="lazy"
                   alt="logo automatic"
+                  className={"rounded-xl"}
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="container mt-10 relative z-[1] m-auto px-6 md:px-12">
+        <div className="m-auto text-center md:w-8/12 lg:w-6/12">
+          <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+            <span className="text-white">Supported</span>
+            &nbsp;by
+          </h2>
+        </div>
+        <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="group rounded-xl border border-gray-200 dark:border-gray-600 bg-white bg-opacity-5 p-2 hover:bg-opacity-10">
+              <Link href={"https://www.ecelliitbhu.com/"} target={"_blank"}>
+                <Image
+                  src={iitStartup}
+                  width={200}
+                  height={200}
+                  loading="lazy"
+                  alt="logo airbnb"
+                  className={"rounded-xl"}
+                />
+              </Link>
+            </div>
+            <div className="group rounded-xl border border-gray-200 dark:border-gray-600 bg-white bg-opacity-5 p-2 hover:bg-opacity-10">
+              <Link href={"https://alumni.iitbhu.ac.in/"} target={"_blank"}>
+                <Image
+                  src={nasscom}
+                  width={200}
+                  height={200}
+                  loading="lazy"
+                  alt="logo microsoft"
                   className={"rounded-xl"}
                 />
               </Link>
