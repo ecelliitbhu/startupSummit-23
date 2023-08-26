@@ -82,6 +82,11 @@ const Home: React.FC = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
+              <div className="flex items-center mt-16 justify-center ">
+                  <h1 className=" text-center text-4xl  lg:text-5xl font-semibold">
+                      Digital <strong className='text-primary'>Startup</strong> Summit
+                  </h1>
+              </div>
           </div>
 
           <div
