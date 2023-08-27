@@ -33,11 +33,11 @@ const nav = [
   },
   {
     name: "Startup/Participants",
-    link: "",
+    link: "/partners",
   },
   {
     name: "Investors",
-    link: "",
+    link: "/partners",
   },
 ];
 

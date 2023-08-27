@@ -52,7 +52,7 @@ const Content: React.FC = () => {
           {Detail.map((data, index) => {
             return (
                 <motion.div key={index}  initial={{opacity: 0, scale:0}}
-                            transition={{delay: index*.2, duration: .5 ,}}
+                            transition={{delay: index*.3, duration: 1 ,}}
                             whileInView={{opacity: 1, scale:1}} viewport={{once: true}}>
               <div
                 className="flex  items-center max-w-md h-16  shadow lg:m-4 lg:p-1"

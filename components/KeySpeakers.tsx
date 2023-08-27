@@ -27,7 +27,7 @@ const listenNowAlbums: Album[] = [
   {
     name: "Irina Ghose",
     image: img2,
-    position: "Managin Director Microsoft India",
+    position: "Managing Director Microsoft India",
     email: "mailto:vanshika.gupta.met20@itbhu.ac.in",
     linkedin: "https://www.linkedin.com/in/irinaghose/",
   },
@@ -52,10 +52,10 @@ const KeySpeaker = () => {
     <>
       <section
         id={"speakers"}
-        className="container grid items-center gap-6 pb-8 pt-6 md:py-10"
+        className="container grid items-center gap-6  pt-6"
       >
-        <h1 className={"-mt-10 flex justify-center text-[3rem]"}>
-          Key Speakers
+        <h1 className="mt- flex justify-center text-2xl font-semibold text-center  capitalize lg:text-3xl dark:text-white">
+          Key <span className="text-blue-500"> &nbsp;Speakers</span>
         </h1>
         <div className="flex flex-wrap justify-center overflow-x-hidden ">
           {listenNowAlbums.map((album,index) => (
