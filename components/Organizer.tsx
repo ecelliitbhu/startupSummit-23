@@ -103,7 +103,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
         <div className="m-auto mt-16 md:w-11/12 lg:w-8/12 xl:w-7/12">
           <div className="flex flex-wrap justify-center gap-6">
             <div className="group rounded-xl border border-gray-200 dark:border-gray-600 bg-white bg-opacity-5 p-2 hover:bg-opacity-10">
-              <Link href={"https://www.ecelliitbhu.com/"} target={"_blank"}>
+              <Link href={"https://iitstartups.org/"} target={"_blank"}>
                 <Image
                   src={iitStartup}
                   width={200}
@@ -115,7 +115,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
               </Link>
             </div>
             <div className="group rounded-xl border border-gray-200 dark:border-gray-600 bg-white bg-opacity-5 p-2 hover:bg-opacity-10">
-              <Link href={"https://alumni.iitbhu.ac.in/"} target={"_blank"}>
+              <Link href={"https://www.coe-iot.com/"} target={"_blank"}>
                 <Image
                   src={nasscom}
                   width={200}
