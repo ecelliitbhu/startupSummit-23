@@ -3,7 +3,7 @@ import React from "react";
 import { StaticImageData } from "next/image";
 import img1 from "@/public/Speakers/1.png";
 import img22 from "@/public/Speakers/22.png";
-import img3 from "@/public/Speakers/3.png";
+import img33 from "@/public/Speakers/33.png";
 import img4 from "@/public/Speakers/4.png";
 import  {motion} from "framer-motion";
 import { TeamComponent } from "@/components/KeySpeakersCard";
@@ -33,7 +33,7 @@ const listenNowAlbums: Album[] = [
   },
   {
     name: "Saurabh Chandra",
-    image: img3,
+    image: img33,
     position: "CEO Ati Motors",
     email: "mailto:atharv.patil.che21@itbhu.ac.in",
     linkedin: "https://www.linkedin.com/in/saurabhchandra/",

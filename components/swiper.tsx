@@ -13,7 +13,7 @@ import {Button} from "@/components/ui/button";
 import {Icons} from "@/components/icons";
 import img1 from "@/public/Speakers/1.png";
 import img22 from "@/public/Speakers/22.png";
-import img3 from "@/public/Speakers/3.png";
+import img33 from "@/public/Speakers/33.png";
 import img4 from "@/public/Speakers/4.png";
 import img5 from "@/public/Speakers/5.png";
 import img6 from "@/public/Speakers/6.png";
@@ -43,7 +43,7 @@ const listenNowAlbums: Album[] = [
     },
     {
         name: "Saurabh Chandra",
-        image: img3,
+        image: img33,
         position: "CEO Ati Motors",
         linkedin: "https://www.linkedin.com/in/saurabhchandra/",
     },
@@ -76,28 +76,28 @@ const listenNowAlbums: Album[] = [
     ,
     {
         name: "Manish Gupta",
-        image: img8,
+        image: img9,
         position: "Co-Founder and CEO, Indegene",
         linkedin: "https://www.linkedin.com/in/manish-gupta-4b85b2/?originalSubdomain=in",
     }
     ,
     {
         name: "Tridibesh Satpathy",
-        image: img9,
+        image: img100,
         position: "Founder and CEO, VMEdu Inc.",
         linkedin: "https://www.linkedin.com/in/tridibesh-satpathy-665776/",
     }
     ,
     {
         name: "Jayadevan P K ",
-        image: img100,
+        image: img8,
         position: "Senior Director of Communications and Content, CoinSwitch",
         linkedin: "https://www.linkedin.com/in/therealjpk/",
     }
 ];
 export default function Swipper() {
     return (
-        <div>
+        <div id={"speakers"}>
             <h1 className="my-8 flex justify-center text-2xl font-semibold text-center  capitalize lg:text-3xl dark:text-white">
                 Key <span className="text-blue-500"> &nbsp;Speakers</span>
             </h1>
