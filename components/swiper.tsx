@@ -123,8 +123,8 @@ export default function Swipper() {
                     listenNowAlbums.map((data,index)=>{
                         return (
 
-                            <SwiperSlide className="bg-center bg-cover w-64 h-[22rem] " key={index} >
-                                <Image src={data.image} alt="1" width={250} height={20} className='block w-full rounded-md'/>
+                            <SwiperSlide className="bg-center bg-cover w-[16rem] h-[22rem] " key={index} >
+                                <Image src={data.image} alt="1" width={250} height={200} className='rounded-md'/>
                                 <div className="space-y-1 text-sm mt-4 cursor-text">
                                     <h3 className="font-medium">{data.name}</h3>
                                     <div>
