@@ -60,7 +60,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
     >
       <div className="container relative z-[1] m-auto px-6 md:px-12">
         <div className="m-auto text-center md:w-8/12 lg:w-6/12">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+          <h2 className="text-2xl font-bold text-black md:text-gray-800 dark:text-white md:text-4xl">
             A Joint <span className="text-white">Initiative</span>
             &nbsp;by
           </h2>
@@ -95,7 +95,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
       </div>
       <div className="container mt-10 relative z-[1] m-auto px-6 md:px-12">
         <div className="m-auto text-center md:w-8/12 lg:w-6/12">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white md:text-4xl">
+          <h2 className="text-2xl font-bold text-black md:text-gray-800 dark:text-white md:text-4xl">
             <span className="text-white">Supported</span>
             &nbsp;by
           </h2>

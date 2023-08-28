@@ -32,6 +32,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         gradient:
           "linear-gradient(-45deg, transparent 15px, #111 15px), linear-gradient(45deg, transparent 10px, #111 10px)",
+        "back":"url('/public/assets/background.png')",
       }),
       colors: {
         border: "hsl(var(--border))",

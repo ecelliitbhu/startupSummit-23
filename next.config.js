@@ -18,6 +18,7 @@ const nextConfig = {
       "flowbite.s3.amazonaws.com",
         "crust.winsomethemes.com",
         "upload.wikimedia.org",
+        "swiperjs.com",
     ],
   },
   webpack:(config,{ isServer})=>{

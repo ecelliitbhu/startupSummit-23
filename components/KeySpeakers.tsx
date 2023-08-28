@@ -2,7 +2,7 @@
 import React from "react";
 import { StaticImageData } from "next/image";
 import img1 from "@/public/Speakers/1.png";
-import img2 from "@/public/Speakers/2.png";
+import img22 from "@/public/Speakers/22.png";
 import img3 from "@/public/Speakers/3.png";
 import img4 from "@/public/Speakers/4.png";
 import  {motion} from "framer-motion";
@@ -26,7 +26,7 @@ const listenNowAlbums: Album[] = [
   },
   {
     name: "Irina Ghose",
-    image: img2,
+    image: img22,
     position: "Managing Director Microsoft India",
     email: "mailto:vanshika.gupta.met20@itbhu.ac.in",
     linkedin: "https://www.linkedin.com/in/irinaghose/",
