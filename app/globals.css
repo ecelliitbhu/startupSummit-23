@@ -73,3 +73,11 @@
 .menu-link {
   @apply text-black hover:opacity-60;
 }
+.swiper-slide {
+  flex-shrink: 0;
+  width: 30% !important;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+  display: block;
+}
