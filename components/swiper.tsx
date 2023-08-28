@@ -98,7 +98,7 @@ const listenNowAlbums: Album[] = [
 export default function Swipper() {
     return (
         <div>
-            <h1 className="mt-8 flex justify-center text-2xl font-semibold text-center  capitalize lg:text-3xl dark:text-white">
+            <h1 className="my-8 flex justify-center text-2xl font-semibold text-center  capitalize lg:text-3xl dark:text-white">
                 Key <span className="text-blue-500"> &nbsp;Speakers</span>
             </h1>
         <div className=' w-[calc(100vw-2rem)]  md:w-[50vw] flex justify-center m-auto overflow-hidden'>
