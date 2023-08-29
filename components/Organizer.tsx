@@ -56,6 +56,7 @@ const Organizer: FunctionComponent<Props> = (props) => {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
+        backgroundAttachment:"fixed",
       }}
     >
       <div className="container relative z-[1] m-auto px-6 md:px-12">

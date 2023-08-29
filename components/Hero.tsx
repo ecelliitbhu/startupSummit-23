@@ -13,30 +13,37 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import bg from "@/public/herobg.svg";
 const Home: React.FC = () => {
   return (
-    <div className="sm:w-[100%] h-[100vh] overflow-x-hidden relative bg-back  " style={{ backgroundImage: `url(${background})`, backgroundSize: 'cover'}}>
+    <div className="sm:w-[100%] h-[100vh] overflow-x-hidden relative bg-back  "  style={{
+        backgroundImage: `url(${bg.src})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+        backgroundAttachment:"fixed",
+    }}>
       <div className="flex justify-center container m-auto px-6 md:px-12 lg:px-7 ">
         <div className="py-40  pb-0 lg:pb-0 sm:px-20 flex-col justify-center items-center   dark:lg:w-12/12 mx-auto">
           {/* video */}
 
           <div id="wrapper">
-            <video
-              src={heroVideo}
-              className="hero-video"
-              autoPlay
-              loop
-              muted
-              style={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                zIndex: "-1",
-                left: 0,
-                top: 0,
-              }}
-            />
+            {/*<video*/}
+            {/*  src={heroVideo}*/}
+            {/*  className="hero-video"*/}
+            {/*  autoPlay*/}
+            {/*  loop*/}
+            {/*  muted*/}
+            {/*  style={{*/}
+            {/*    position: "absolute",*/}
+            {/*    width: "100%",*/}
+            {/*    height: "100%",*/}
+            {/*    objectFit: "cover",*/}
+            {/*    zIndex: "-1",*/}
+            {/*    left: 0,*/}
+            {/*    top: 0,*/}
+            {/*  }}*/}
+            {/*/>*/}
             <div className="lg:mt-auto flex justify-evenly items-center lg:space-x-4 text-white">
               <div className="flex items-center">
                 <Icons.calendar className="w-8 " />
@@ -89,20 +96,20 @@ const Home: React.FC = () => {
               </div>
           </div>
 
-          <div
-            className="video-overlay"
-            style={{
-              position: "absolute",
-              width: "100%",
-              height: "100%",
-              backgroundColor: "#0c0a09",
-              opacity: 0.5,
-              objectFit: "cover",
-              zIndex: "-1",
-              left: 0,
-              top: 0,
-            }}
-          ></div>
+          {/*<div*/}
+          {/*  className="video-overlay"*/}
+          {/*  style={{*/}
+          {/*    position: "absolute",*/}
+          {/*    width: "100%",*/}
+          {/*    height: "100%",*/}
+          {/*    backgroundColor: "#0c0a09",*/}
+          {/*    opacity: 0.5,*/}
+          {/*    objectFit: "cover",*/}
+          {/*    zIndex: "-1",*/}
+          {/*    left: 0,*/}
+          {/*    top: 0,*/}
+          {/*  }}*/}
+          {/*></div>*/}
         </div>
 
         <hr />
