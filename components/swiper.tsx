@@ -21,6 +21,7 @@ import img7 from "@/public/Speakers/7.png";
 import img8 from "@/public/Speakers/8.png";
 import img9 from "@/public/Speakers/9.png";
 import img100 from "@/public/Speakers/100.png";
+import img12 from "@/public/Speakers/12.png";
 export interface Album {
     name: string;
     image: StaticImageData;
@@ -93,6 +94,13 @@ const listenNowAlbums: Album[] = [
         image: img8,
         position: "Senior Director of Communications and Content, CoinSwitch",
         linkedin: "https://www.linkedin.com/in/therealjpk/",
+    }
+    ,
+    {
+        name: "Anurag Srivastava",
+        image: img12,
+        position: "COO, ARTPARK, I-Hub for robotics and Autonomous Systems, IISc Bangalore",
+        linkedin: "https://www.linkedin.com/in/anurag-srivastava-b65567/",
     }
 ];
 export default function Swipper() {
