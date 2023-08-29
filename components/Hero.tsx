@@ -44,14 +44,14 @@ const Home: React.FC = () => {
             {/*    top: 0,*/}
             {/*  }}*/}
             {/*/>*/}
-            <div className="lg:mt-auto flex justify-evenly items-center lg:space-x-4 text-white">
-              <div className="flex items-center">
+            <div className="lg:mt-auto flex flex-col sm:flex-row justify-evenly items-center lg:space-x-4 text-white">
+              <div className="flex items-center justify-self-center">
                 <Icons.calendar className="w-8 " />
                 <b className="text-xs sm:text-lg  lg:text-2xl">OCTOBER 28-29</b>
               </div>
-              <div className="flex items-center  sm:mt-0">
+              <div className="flex  justify-center mt-4 sm:mt-0">
                 <Icons.location className=" w-8 " />
-                <b className=" text-xs sm:text-lg lg:text-2xl">
+                <b className=" text-xs sm:text-lg lg:text-2xl break-words">
                   TAJ YESHWANTPUR, BENGALURU
                 </b>
               </div>
@@ -114,7 +114,7 @@ const Home: React.FC = () => {
 
         <hr />
       </div>
-      <div className="absolute bottom-16 md:bottom-6">
+      <div className="absolute bottom-16 sm:bottom-8 md:bottom-6">
         <div className="flex items-center justify-center  ">
           <Hightlight />
         </div>
