@@ -21,6 +21,7 @@ import img7 from "@/public/Speakers/7.png";
 import img8 from "@/public/Speakers/8.png";
 import img9 from "@/public/Speakers/9.png";
 import img100 from "@/public/Speakers/100.png";
+import img12 from "@/public/Speakers/12.png";
 export interface Album {
     name: string;
     image: StaticImageData;
@@ -29,18 +30,7 @@ export interface Album {
 }
 
 const listenNowAlbums: Album[] = [
-    {
-        name: "Amit Agarwal",
-        image: img1,
-        position: "Founder & CEO, NoBroker.com",
-        linkedin: "https://www.linkedin.com/in/amit-kumar-agarwal-5b30301/",
-    },
-    {
-        name: "Irina Ghose",
-        image: img22,
-        position: "Managing Director Microsoft India",
-        linkedin: "https://www.linkedin.com/in/irinaghose/",
-    },
+
     {
         name: "Saurabh Chandra",
         image: img33,
@@ -72,8 +62,19 @@ const listenNowAlbums: Album[] = [
         image: img7,
         position: "Managing Partner, KAAJ Ventures",
         linkedin: "https://www.linkedin.com/in/bvjagadeesh/",
-    }
-    ,
+    },
+    {
+        name: "Amit Agarwal",
+        image: img1,
+        position: "Founder & CEO, NoBroker.com",
+        linkedin: "https://www.linkedin.com/in/amit-kumar-agarwal-5b30301/",
+    },
+    {
+        name: "Irina Ghose",
+        image: img22,
+        position: "Managing Director Microsoft India",
+        linkedin: "https://www.linkedin.com/in/irinaghose/",
+    },
     {
         name: "Manish Gupta",
         image: img9,
@@ -93,6 +94,13 @@ const listenNowAlbums: Album[] = [
         image: img8,
         position: "Senior Director of Communications and Content, CoinSwitch",
         linkedin: "https://www.linkedin.com/in/therealjpk/",
+    }
+    ,
+    {
+        name: "Anurag Srivastava",
+        image: img12,
+        position: "COO, ARTPARK, I-Hub for robotics and Autonomous Systems, IISc Bangalore",
+        linkedin: "https://www.linkedin.com/in/anurag-srivastava-b65567/",
     }
 ];
 export default function Swipper() {
