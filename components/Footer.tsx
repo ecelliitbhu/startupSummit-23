@@ -380,12 +380,12 @@ const Footer = () => {
                     </a>
                     <br />
                     <a
-                      href={`tel:${"+919342860485"}`}
+                      href={`tel:${"+916393364090"}`}
                       className={
                         "text-gray-600 transition-colors duration-300 hover:underline hover:text-primary"
                       }
                     >
-                      +919342860485
+                      +916393364090
                     </a>
                   </li>
                 </div>
