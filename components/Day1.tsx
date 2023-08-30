@@ -86,16 +86,11 @@ const events = [
   {
     title: "4:25 PM – 4:40 PM",
     cardTitle: "Tea Break",
-    cardSubtitle: "Lessons from Unicorn founders:",
-    cardDetailedText:
-      "Two 20 mins session each showcasing unicorn founder’s story",
   },
   {
     title: "4:45 PM – 6:30 PM",
     cardTitle: "The PITCH PAVILION",
-    cardSubtitle: "Lessons from Unicorn founders:",
-    cardDetailedText:
-      "Two 20 mins session each showcasing unicorn founder’s story",
+    cardSubtitle: "10 Startup presentations",
   },
   {
     title: "6:30 PM – 8:00 PM",
