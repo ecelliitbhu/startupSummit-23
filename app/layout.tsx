@@ -85,6 +85,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} min-w-min`}>
+      <div className="fixed inset-x-0 bottom-0 p-4 z-10 mb-8">
+        <div className="rounded-lg bg-red-600 px-4 py-6 text-white shadow-lg">
+          <p className="text-center text-lg font-medium">
+            After careful consideration and discussions with our partners and patrons, the Digital Startup Summit 2023 has been postponed to a later date in 2024.
+          </p>
+        </div>
+      </div>
         <Navbar />
         <main> {children}</main>
         <Footer />
