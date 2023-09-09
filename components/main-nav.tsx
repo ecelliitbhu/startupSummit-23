@@ -27,10 +27,10 @@ const nav = [
     name: "Events",
     link: "/#events",
   },
-  {
-    name: "Agenda",
-    link: "/agenda",
-  },
+  // {
+  //   name: "Agenda",
+  //   link: "/agenda",
+  // },
   {
     name: "Startup/Participants",
     link: "/partners",
@@ -138,27 +138,27 @@ const Navbar: FunctionComponent<Props> = (props) => {
                       "rounded-full bg-[#02bef2] text-white focus-visible:outline-none"
                     }
                   >
-                    Register
+                    Coming Soon
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuSeparator />
-                  <Link
-                    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
-                    target={"_blank"}
-                  >
-                    <DropdownMenuItem>Investor</DropdownMenuItem>
-                  </Link>
-                  <Link
-                    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
-                    target={"_blank"}
-                  >
-                    <DropdownMenuItem>Startup</DropdownMenuItem>
-                  </Link>
-                  <Link href={"/attendee"}>
-                    <DropdownMenuItem>Attendee</DropdownMenuItem>
-                  </Link>
-                </DropdownMenuContent>
+                {/*<DropdownMenuContent>*/}
+                {/*  <DropdownMenuSeparator />*/}
+                {/*  <Link*/}
+                {/*    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}*/}
+                {/*    target={"_blank"}*/}
+                {/*  >*/}
+                {/*    <DropdownMenuItem>Investor</DropdownMenuItem>*/}
+                {/*  </Link>*/}
+                {/*  <Link*/}
+                {/*    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}*/}
+                {/*    target={"_blank"}*/}
+                {/*  >*/}
+                {/*    <DropdownMenuItem>Startup</DropdownMenuItem>*/}
+                {/*  </Link>*/}
+                {/*  <Link href={"/attendee"}>*/}
+                {/*    <DropdownMenuItem>Attendee</DropdownMenuItem>*/}
+                {/*  </Link>*/}
+                {/*</DropdownMenuContent>*/}
               </DropdownMenu>
             </div>
           </div>
