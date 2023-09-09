@@ -45,16 +45,16 @@ const Home: React.FC = () => {
             {/*  }}*/}
             {/*/>*/}
             <div className="lg:mt-auto flex flex-col sm:flex-row justify-evenly items-center lg:space-x-4 text-white">
-              <div className="flex items-center justify-self-center">
-                <Icons.calendar className="w-8 " />
-                <b className="text-xs sm:text-lg  lg:text-2xl">OCTOBER 28-29</b>
-              </div>
-              <div className="flex  justify-center mt-4 sm:mt-0">
-                <Icons.location className=" w-8 " />
-                <b className=" text-xs sm:text-lg lg:text-2xl break-words">
-                  TAJ YESHWANTPUR, BENGALURU
-                </b>
-              </div>
+              {/*<div className="flex items-center justify-self-center">*/}
+              {/*  <Icons.calendar className="w-8 " />*/}
+              {/*  <b className="text-xs sm:text-lg  lg:text-2xl">OCTOBER 28-29</b>*/}
+              {/*</div>*/}
+              {/*<div className="flex  justify-center mt-4 sm:mt-0">*/}
+              {/*  <Icons.location className=" w-8 " />*/}
+              {/*  <b className=" text-xs sm:text-lg lg:text-2xl break-words">*/}
+              {/*    TAJ YESHWANTPUR, BENGALURU*/}
+              {/*  </b>*/}
+              {/*</div>*/}
             </div>
             <div className="pt-8 text-center  ">
               <DropdownMenu>
@@ -66,32 +66,32 @@ const Home: React.FC = () => {
                       "bg-[#02bef2] shadow-md  shadow-[#0483ba] hover:bg-[#02bef2]  focus-visible:outline-none"
                     }
                   >
-                    REGISTER
+                   Coming Soon
                   </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuSeparator />
-                  <Link
-                    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}
-                    target={"_blank"}
-                  >
-                    <DropdownMenuItem>Investor</DropdownMenuItem>
-                  </Link>
-                  <Link
-                    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}
-                    target={"_blank"}
-                  >
-                    <DropdownMenuItem>Startup</DropdownMenuItem>
-                  </Link>
-                  <Link href={"/attendee"}>
-                    <DropdownMenuItem>Attendee</DropdownMenuItem>
-                  </Link>
-                </DropdownMenuContent>
+                {/*<DropdownMenuContent>*/}
+                {/*  <DropdownMenuSeparator />*/}
+                {/*  <Link*/}
+                {/*    href={"https://forms.gle/UNSupDxDiVUvX7Rz9"}*/}
+                {/*    target={"_blank"}*/}
+                {/*  >*/}
+                {/*    <DropdownMenuItem>Investor</DropdownMenuItem>*/}
+                {/*  </Link>*/}
+                {/*  <Link*/}
+                {/*    href={"https://forms.gle/uYXQ6Jf7npjtpTJA8"}*/}
+                {/*    target={"_blank"}*/}
+                {/*  >*/}
+                {/*    <DropdownMenuItem>Startup</DropdownMenuItem>*/}
+                {/*  </Link>*/}
+                {/*  <Link href={"/attendee"}>*/}
+                {/*    <DropdownMenuItem>Attendee</DropdownMenuItem>*/}
+                {/*  </Link>*/}
+                {/*</DropdownMenuContent>*/}
               </DropdownMenu>
             </div>
               <div className="flex items-center mt-16 justify-center ">
                   <h1 className=" text-center text-4xl  lg:text-5xl font-semibold">
-                      Digital <strong className='text-primary'>Startup</strong> Summit 2023
+                      Digital <strong className='text-primary'>Startup</strong> Summit 2024
                   </h1>
               </div>
           </div>
